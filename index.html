@@ -1,0 +1,1810 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Reh´s Thaimassage – Traditionelle Thai-Massage in Köln-Weiden</title>
+  <meta
+    name="description"
+    content="Reh´s Thaimassage in Köln-Weiden – traditionelle Thai-Massage, Fußmassage und Kopf- & Schultermassage. Hochwertige Entspannung in ruhiger Atmosphäre. Jetzt Termin telefonisch vereinbaren."
+  />
+  <meta
+    name="keywords"
+    content="Reh´s Thaimassage, Thai Massage Köln, Thai Massage Köln Weiden, Thaimassage Köln Weiden, Bahnstraße 100 Köln, Fußmassage Köln, Schultermassage Köln, traditionelle Thai Massage Köln"
+  />
+  <meta name="theme-color" content="#b48858" />
+
+  <meta property="og:title" content="Reh´s Thaimassage – Traditionelle Thai-Massage in Köln-Weiden" />
+  <meta
+    property="og:description"
+    content="Traditionelle Thai-Massage in Köln-Weiden. Telefonische Terminvereinbarung, klare Preisstruktur und stilvolle Wellness-Präsenz."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.rehs-thaimassage.de/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg: #f7f2eb;
+      --bg-soft: #fbf8f4;
+      --surface: rgba(255,255,255,0.84);
+      --surface-strong: #ffffff;
+      --text: #1e1813;
+      --muted: #6c6257;
+      --line: rgba(30, 24, 19, 0.08);
+      --gold: #b48858;
+      --gold-dark: #8f6638;
+      --brown: #372719;
+      --brown-soft: #4b3522;
+      --shadow: 0 18px 42px rgba(39, 27, 14, 0.08);
+      --shadow-strong: 0 24px 60px rgba(39, 27, 14, 0.13);
+      --radius-xl: 32px;
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --radius-sm: 14px;
+      --max: 1240px;
+      --header-h: 86px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(180, 136, 88, 0.14), transparent 26%),
+        radial-gradient(circle at bottom right, rgba(143, 102, 56, 0.10), transparent 24%),
+        linear-gradient(180deg, #fcf9f5 0%, #f7f2eb 48%, #f3ede5 100%);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      background: linear-gradient(90deg, #2c1f13, #3a2918);
+      color: rgba(255,255,255,0.92);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.94rem;
+    }
+
+    .topbar-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 8px 18px;
+      min-height: 48px;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1100;
+      background: rgba(251, 248, 244, 0.82);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(30, 24, 19, 0.06);
+    }
+
+    .nav {
+      min-height: var(--header-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      flex-shrink: 0;
+      position: relative;
+      background:
+        radial-gradient(circle at 50% 30%, rgba(255,255,255,0.95), rgba(255,255,255,0.15) 34%, transparent 36%),
+        linear-gradient(135deg, #d1ad7a, #8f6638);
+      box-shadow: inset 0 1px 1px rgba(255,255,255,0.45), 0 10px 24px rgba(143, 102, 56, 0.22);
+    }
+
+    .brand-mark::before {
+      content: "✦";
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      color: rgba(255,255,255,0.92);
+      font-weight: 800;
+      font-size: 1.05rem;
+    }
+
+    .brand-title {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.92rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.01em;
+    }
+
+    .brand-subtitle {
+      margin-top: 3px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #4b4035;
+      font-weight: 500;
+      font-size: 0.96rem;
+      transition: color 0.2s ease, opacity 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-dark);
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 0;
+      cursor: pointer;
+      border-radius: 999px;
+      padding: 14px 22px;
+      font-weight: 700;
+      font-size: 0.96rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      box-shadow: 0 16px 34px rgba(143, 102, 56, 0.24);
+    }
+
+    .btn-secondary {
+      color: var(--brown);
+      background: rgba(255,255,255,0.78);
+      border: 1px solid rgba(30,24,19,0.08);
+      box-shadow: 0 10px 22px rgba(39, 27, 14, 0.06);
+    }
+
+    .mobile-toggle {
+      display: none;
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      border: 1px solid rgba(30,24,19,0.08);
+      background: rgba(255,255,255,0.82);
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 10px 22px rgba(39, 27, 14, 0.06);
+      padding: 0;
+    }
+
+    .mobile-toggle span,
+    .mobile-toggle span::before,
+    .mobile-toggle span::after {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 2px;
+      border-radius: 999px;
+      background: var(--brown);
+      position: relative;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    .mobile-toggle span::before {
+      position: absolute;
+      top: -6px;
+    }
+
+    .mobile-toggle span::after {
+      position: absolute;
+      top: 6px;
+    }
+
+    .mobile-menu {
+      display: none;
+    }
+
+    .mobile-overlay {
+      display: none;
+    }
+
+    .hero {
+      padding: 72px 0 38px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 26px;
+      align-items: stretch;
+    }
+
+    .hero-card,
+    .section-card,
+    .info-card,
+    .service-card,
+    .contact-card,
+    .gallery-card,
+    .faq-item,
+    .cta-box,
+    .highlight-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.82));
+      border: 1px solid rgba(30,24,19,0.07);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-card {
+      border-radius: 36px;
+      padding: 54px;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top right, rgba(180, 136, 88, 0.14), transparent 35%),
+        linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.84));
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      right: -70px;
+      bottom: -70px;
+      background: radial-gradient(circle, rgba(180, 136, 88, 0.16), transparent 70%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 14px;
+      border-radius: 999px;
+      background: rgba(180, 136, 88, 0.12);
+      color: var(--gold-dark);
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 18px;
+    }
+
+    h1, h2, h3, h4 {
+      margin: 0;
+      line-height: 1.08;
+    }
+
+    h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.9rem, 5vw, 5.15rem);
+      letter-spacing: -0.02em;
+      font-weight: 700;
+    }
+
+    .hero-text {
+      margin-top: 20px;
+      max-width: 760px;
+      color: #4e453c;
+      font-size: 1.07rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .hero-points {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .hero-point {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.72);
+      border: 1px solid rgba(30,24,19,0.06);
+    }
+
+    .hero-point strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 0.98rem;
+    }
+
+    .hero-point span {
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .hero-visual {
+      min-height: 100%;
+      border-radius: 34px;
+      overflow: hidden;
+      border: 1px solid rgba(30,24,19,0.08);
+      position: relative;
+      box-shadow: var(--shadow-strong);
+      background:
+        linear-gradient(180deg, rgba(34,25,16,0.10), rgba(34,25,16,0.25)),
+        radial-gradient(circle at 18% 18%, rgba(255,255,255,0.24), transparent 18%),
+        linear-gradient(135deg, #9e7445 0%, #eadac5 54%, #8d6336 100%);
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        repeating-linear-gradient(
+          135deg,
+          rgba(255,255,255,0.04) 0,
+          rgba(255,255,255,0.04) 8px,
+          transparent 8px,
+          transparent 24px
+        );
+      opacity: 0.32;
+    }
+
+    .hero-visual::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 82% 15%, rgba(255,255,255,0.16), transparent 20%),
+        linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.06) 52%, transparent 100%);
+      mix-blend-mode: screen;
+    }
+
+    .visual-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      color: #fff;
+      padding: 34px;
+    }
+
+    .visual-label {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.16);
+      border: 1px solid rgba(255,255,255,0.16);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .visual-content h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      margin-bottom: 10px;
+    }
+
+    .visual-content p {
+      max-width: 420px;
+      color: rgba(255,255,255,0.9);
+      margin: 0;
+    }
+
+    section {
+      padding: 38px 0;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .section-kicker {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--gold-dark);
+      font-size: 0.84rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2rem, 3vw, 3.15rem);
+      font-weight: 700;
+    }
+
+    .section-desc {
+      max-width: 740px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .info-card {
+      border-radius: 24px;
+      padding: 26px;
+    }
+
+    .info-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: rgba(180,136,88,0.12);
+      color: var(--gold-dark);
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .info-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    .info-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      border-radius: 26px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .service-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .service-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 11px;
+      border-radius: 999px;
+      background: rgba(180,136,88,0.12);
+      color: var(--gold-dark);
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .service-card h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.95rem;
+    }
+
+    .service-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.97rem;
+    }
+
+    .price-list {
+      display: grid;
+      gap: 10px;
+      margin-top: auto;
+    }
+
+    .price-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 13px 15px;
+      border-radius: 14px;
+      background: rgba(247,242,235,0.92);
+      border: 1px solid rgba(30,24,19,0.06);
+      font-size: 0.96rem;
+    }
+
+    .price-row strong {
+      font-size: 1rem;
+    }
+
+    .split-grid {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 22px;
+    }
+
+    .section-card {
+      border-radius: 30px;
+      padding: 32px;
+    }
+
+    .two-col-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px 18px;
+      margin-top: 22px;
+    }
+
+    .two-col-list div {
+      padding: 14px 15px;
+      border-radius: 16px;
+      background: rgba(247,242,235,0.95);
+      border: 1px solid rgba(30,24,19,0.06);
+      color: #483f36;
+      font-size: 0.96rem;
+      font-weight: 500;
+    }
+
+    .highlight-card {
+      border-radius: 30px;
+      padding: 32px;
+      min-height: 100%;
+      background:
+        radial-gradient(circle at top right, rgba(180,136,88,0.18), transparent 32%),
+        linear-gradient(180deg, #2d2014, #3e2d1c);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .highlight-card blockquote {
+      margin: 0;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      line-height: 1.14;
+      font-weight: 600;
+    }
+
+    .highlight-card p {
+      color: rgba(255,255,255,0.84);
+      margin: 18px 0 0;
+      max-width: 520px;
+    }
+
+    .price-overview {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 22px;
+    }
+
+    .price-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.82));
+      border: 1px solid rgba(30,24,19,0.07);
+      box-shadow: var(--shadow);
+      border-radius: 28px;
+      padding: 28px;
+    }
+
+    .price-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+    }
+
+    .price-table th,
+    .price-table td {
+      text-align: left;
+      padding: 16px 10px;
+      border-bottom: 1px solid rgba(30,24,19,0.08);
+      vertical-align: top;
+      font-size: 0.96rem;
+    }
+
+    .price-table th {
+      color: var(--muted);
+      font-size: 0.84rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .callout {
+      border-radius: 22px;
+      padding: 22px;
+      background: rgba(180,136,88,0.1);
+      border: 1px solid rgba(180,136,88,0.18);
+    }
+
+    .callout + .callout {
+      margin-top: 18px;
+    }
+
+    .callout h3 {
+      margin-bottom: 8px;
+      font-size: 1.14rem;
+    }
+
+    .callout p {
+      margin: 0;
+      color: #584d42;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 20px;
+    }
+
+    .gallery-main,
+    .gallery-side {
+      display: grid;
+      gap: 20px;
+    }
+
+    .gallery-card {
+      border-radius: 28px;
+      overflow: hidden;
+      position: relative;
+      min-height: 260px;
+      background:
+        linear-gradient(180deg, rgba(34,25,16,0.16), rgba(34,25,16,0.26)),
+        linear-gradient(135deg, #c8a16e 0%, #efe1cc 52%, #9a6f40 100%);
+    }
+
+    .gallery-card.tall {
+      min-height: 540px;
+    }
+
+    .gallery-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 18% 16%, rgba(255,255,255,0.22), transparent 18%),
+        repeating-linear-gradient(
+          135deg,
+          rgba(255,255,255,0.04) 0,
+          rgba(255,255,255,0.04) 8px,
+          transparent 8px,
+          transparent 24px
+        );
+      opacity: 0.35;
+    }
+
+    .gallery-label {
+      position: absolute;
+      left: 22px;
+      right: 22px;
+      bottom: 22px;
+      z-index: 2;
+      color: #fff;
+      padding: 18px 18px 16px;
+      border-radius: 20px;
+      background: rgba(22, 15, 10, 0.26);
+      border: 1px solid rgba(255,255,255,0.12);
+      backdrop-filter: blur(10px);
+    }
+
+    .gallery-label strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+
+    .gallery-label span {
+      color: rgba(255,255,255,0.82);
+      font-size: 0.93rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 22px;
+    }
+
+    .contact-card {
+      border-radius: 30px;
+      padding: 30px;
+    }
+
+    .contact-stack {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .contact-item {
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(247,242,235,0.94);
+      border: 1px solid rgba(30,24,19,0.06);
+    }
+
+    .contact-item strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 0.95rem;
+    }
+
+    .contact-item span,
+    .contact-item a {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .map-wrap {
+      border-radius: 28px;
+      overflow: hidden;
+      min-height: 100%;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(30,24,19,0.08);
+      background: #e9dfd0;
+    }
+
+    .map-wrap iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 540px;
+      border: 0;
+      display: block;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .faq-item {
+      border-radius: 22px;
+      padding: 24px;
+    }
+
+    .faq-item h3 {
+      font-size: 1.08rem;
+      margin-bottom: 8px;
+    }
+
+    .faq-item p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .cta {
+      padding: 18px 0 82px;
+    }
+
+    .cta-box {
+      border-radius: 34px;
+      padding: 40px;
+      background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.12), transparent 24%),
+        linear-gradient(135deg, #2f2216, #4b3522);
+      color: #fff;
+      box-shadow: var(--shadow-strong);
+    }
+
+    .cta-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.84);
+      max-width: 760px;
+      margin: 12px 0 0;
+    }
+
+    footer {
+      border-top: 1px solid rgba(30,24,19,0.08);
+      padding: 28px 0 110px;
+      color: #675c50;
+      font-size: 0.95rem;
+    }
+
+    .footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-dark);
+    }
+
+    .floating-cta {
+      position: fixed;
+      left: 50%;
+      bottom: 18px;
+      transform: translateX(-50%);
+      width: min(calc(100% - 20px), 860px);
+      z-index: 1200;
+      pointer-events: none;
+    }
+
+    .floating-cta-inner {
+      pointer-events: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 16px;
+      border-radius: 22px;
+      background: rgba(33, 23, 14, 0.92);
+      color: #fff;
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 18px 38px rgba(18, 12, 8, 0.28);
+    }
+
+    .floating-cta-text strong {
+      display: block;
+      font-size: 0.98rem;
+    }
+
+    .floating-cta-text span {
+      color: rgba(255,255,255,0.76);
+      font-size: 0.9rem;
+    }
+
+    .floating-cta-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .floating-cta .btn {
+      padding: 12px 18px;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1120px) {
+      .hero-grid,
+      .split-grid,
+      .price-overview,
+      .gallery-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .info-grid,
+      .services-grid,
+      .faq-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .gallery-card.tall {
+        min-height: 360px;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .nav-links,
+      .nav-cta .btn {
+        display: none;
+      }
+
+      .mobile-toggle {
+        display: inline-flex;
+      }
+
+      .mobile-menu {
+        display: block;
+        position: fixed;
+        inset: 0 0 0 auto;
+        width: min(88vw, 360px);
+        background: linear-gradient(180deg, #fbf8f4, #f4ede3);
+        z-index: 1300;
+        transform: translateX(100%);
+        transition: transform 0.28s ease;
+        box-shadow: -20px 0 40px rgba(20, 14, 9, 0.16);
+        padding: 18px;
+      }
+
+      body.menu-open .mobile-menu {
+        transform: translateX(0);
+      }
+
+      .mobile-overlay {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(18, 12, 8, 0.32);
+        z-index: 1250;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s ease;
+      }
+
+      body.menu-open .mobile-overlay {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .mobile-menu-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid rgba(30,24,19,0.08);
+        margin-bottom: 16px;
+      }
+
+      .mobile-close {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        border: 1px solid rgba(30,24,19,0.08);
+        background: rgba(255,255,255,0.8);
+        cursor: pointer;
+      }
+
+      .mobile-nav {
+        display: grid;
+        gap: 8px;
+      }
+
+      .mobile-nav a {
+        padding: 14px 14px;
+        border-radius: 14px;
+        background: rgba(255,255,255,0.7);
+        border: 1px solid rgba(30,24,19,0.06);
+        color: #473c32;
+        font-weight: 600;
+      }
+
+      .mobile-actions {
+        display: grid;
+        gap: 10px;
+        margin-top: 18px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      :root {
+        --header-h: 76px;
+      }
+
+      .hero {
+        padding-top: 34px;
+      }
+
+      .hero-card {
+        padding: 30px 22px;
+        border-radius: 28px;
+      }
+
+      .section-card,
+      .info-card,
+      .service-card,
+      .contact-card,
+      .gallery-card,
+      .faq-item,
+      .cta-box,
+      .highlight-card,
+      .price-card {
+        border-radius: 22px;
+      }
+
+      .hero-points,
+      .info-grid,
+      .services-grid,
+      .faq-grid,
+      .two-col-list {
+        grid-template-columns: 1fr;
+      }
+
+      .section-head {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero-actions,
+      .floating-cta-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .floating-cta {
+        width: calc(100% - 14px);
+        bottom: 8px;
+      }
+
+      .floating-cta-inner {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+      }
+
+      .map-wrap iframe {
+        min-height: 420px;
+      }
+
+      footer {
+        padding-bottom: 150px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MassageTherapist",
+    "name": "Reh´s Thaimassage",
+    "url": "https://www.rehs-thaimassage.de/",
+    "telephone": "+49 2234 2004237",
+    "founder": "Chorphaka Riedel",
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Bahnstraße 100",
+      "postalCode": "50858",
+      "addressLocality": "Köln",
+      "addressRegion": "Nordrhein-Westfalen",
+      "addressCountry": "DE"
+    },
+    "openingHours": [
+      "Tu 10:00-20:00",
+      "We 10:00-20:00",
+      "Th 10:00-20:00",
+      "Fr 10:00-20:00",
+      "Sa 10:00-20:00",
+      "Su 11:00-19:00"
+    ],
+    "hasMap": "https://maps.google.com/?q=Reh%C2%B4s+Thai-Massage+Bahnstra%C3%9Fe+100+50858+K%C3%B6ln",
+    "areaServed": "Köln-Weiden",
+    "sameAs": [
+      "https://www.rehs-thaimassage.de/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Traditionelle Thai-Massage in Köln-Weiden</span>
+      <span>•</span>
+      <span>Telefonische Terminvereinbarung</span>
+      <span>•</span>
+      <span>Di–Sa 10:00–20:00 Uhr · So 11:00–19:00 Uhr</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Reh´s Thaimassage Startseite">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>
+          <span class="brand-title">Reh´s Thaimassage</span>
+          <span class="brand-subtitle">Traditionelle Thai-Massage in Köln-Weiden</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Hauptnavigation">
+        <a href="#ueber-uns">Über uns</a>
+        <a href="#massagen">Massagen</a>
+        <a href="#preise">Preise</a>
+        <a href="#galerie">Studio</a>
+        <a href="#gutscheine">Gutscheine</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="tel:+4922342004237">Jetzt anrufen</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-head">
+      <div>
+        <div class="brand-title" style="font-size:1.6rem;">Reh´s Thaimassage</div>
+        <div class="brand-subtitle">Köln-Weiden</div>
+      </div>
+      <button class="mobile-close" id="mobileClose" aria-label="Menü schließen">✕</button>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Mobile Navigation">
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#massagen">Massagen</a>
+      <a href="#preise">Preise</a>
+      <a href="#galerie">Studio</a>
+      <a href="#gutscheine">Gutscheine</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <div class="mobile-actions">
+      <a class="btn btn-primary" href="tel:+4922342004237">02234 - 2004237</a>
+      <a class="btn btn-secondary" href="https://maps.google.com/?q=Reh%C2%B4s+Thai-Massage+Bahnstra%C3%9Fe+100+50858+K%C3%B6ln" target="_blank" rel="noopener noreferrer">Route öffnen</a>
+    </div>
+  </aside>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card reveal">
+          <span class="eyebrow">Original Thai-Massage · Köln-Weiden</span>
+          <h1>Entspannung mit Stil, Ruhe und traditioneller Berührung.</h1>
+          <p class="hero-text">
+            Willkommen bei Reh´s Thaimassage. Diese Premium-Onepage verbindet eine elegante Optik mit klarer
+            Nutzerführung: hochwertige Darstellung, schnelle Kontaktmöglichkeiten und ein seriöser, ruhiger
+            Markenauftritt im Stil einer modernen Wellness-Website.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+4922342004237">Termin telefonisch vereinbaren</a>
+            <a class="btn btn-secondary" href="#preise">Preise ansehen</a>
+          </div>
+
+          <div class="hero-points">
+            <div class="hero-point">
+              <strong>Traditionell & authentisch</strong>
+              <span>Thai-Massage, Fußmassage sowie Kopf- & Schultermassage.</span>
+            </div>
+            <div class="hero-point">
+              <strong>Zentral in Köln-Weiden</strong>
+              <span>Bahnstraße 100, bequem erreichbar mit der KVB Linie 1.</span>
+            </div>
+            <div class="hero-point">
+              <strong>Direkte Terminvergabe</strong>
+              <span>Kontakt und Buchungswunsch schnell per Telefon.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="visual-content">
+            <span class="visual-label">Wellness · Ruhe · Balance</span>
+            <h2>Eine moderne Premium-Präsenz für ein traditionelles Studio.</h2>
+            <p>
+              Sauber aufgebaut, mobil stark optimiert und mit klarer Conversion-Struktur für Anrufe, Route
+              und Vertrauen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ueber-uns">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-kicker">Über das Studio</span>
+            <h2 class="section-title">Traditionelle Thai-Massage in ruhiger Atmosphäre</h2>
+          </div>
+          <p class="section-desc">
+            Die traditionelle Thai-Massage wird auf der offiziellen Seite als „Nuad Phaen Boran“ beschrieben
+            und mit passiven Dehnungen, Gelenkmobilisation sowie Druckpunkttechniken verbunden. Diese Website
+            übersetzt genau dieses Profil in einen klaren, hochwertigen und vertrauensvollen Webauftritt.
+          </p>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card reveal">
+            <div class="info-icon">01</div>
+            <h3>Authentische Ausrichtung</h3>
+            <p>Traditionelle Techniken mit Fokus auf Entspannung, Lockerung und ein angenehmes Körpergefühl.</p>
+          </article>
+
+          <article class="info-card reveal">
+            <div class="info-icon">02</div>
+            <h3>Persönlicher Kontakt</h3>
+            <p>Bewusst direkte Terminvereinbarung per Telefon statt komplizierter Buchungsstrecken.</p>
+          </article>
+
+          <article class="info-card reveal">
+            <div class="info-icon">03</div>
+            <h3>Lokale Klarheit</h3>
+            <p>Adresse, Öffnungszeiten und ÖPNV-Anbindung sind prominent eingebunden und sofort sichtbar.</p>
+          </article>
+
+          <article class="info-card reveal">
+            <div class="info-icon">04</div>
+            <h3>Seriöse Premium-Optik</h3>
+            <p>Visuell nah an einer hochwertigen Massage- und Wellnessmarke mit klarer mobiler Struktur.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="massagen">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-kicker">Massagen</span>
+            <h2 class="section-title">Behandlungen mit klarer Preisstruktur</h2>
+          </div>
+          <p class="section-desc">
+            Die offiziellen Leistungen sind bewusst kompakt. Deshalb ist die Seite auf Übersicht, Eleganz und
+            schnelle Entscheidung aufgebaut.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-badge">Klassisch</span>
+            </div>
+            <h3>Traditionelle Thai-Massage</h3>
+            <p>
+              Die Kernbehandlung des Studios. Laut offizieller Seite auf Wunsch auch mit Öl.
+            </p>
+            <div class="price-list">
+              <div class="price-row"><span>30 Minuten</span><strong>32,- €</strong></div>
+              <div class="price-row"><span>60 Minuten</span><strong>50,- €</strong></div>
+              <div class="price-row"><span>90 Minuten</span><strong>82,- €</strong></div>
+              <div class="price-row"><span>120 Minuten</span><strong>95,- €</strong></div>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-badge">Gezielt</span>
+            </div>
+            <h3>Fußmassage</h3>
+            <p>
+              Eine wohltuende Anwendung für Füße und Unterschenkel, ideal als entspannende Ergänzung oder kurze Auszeit.
+            </p>
+            <div class="price-list">
+              <div class="price-row"><span>30 Minuten</span><strong>32,- €</strong></div>
+              <div class="price-row"><span>60 Minuten</span><strong>50,- €</strong></div>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-badge">Fokusbereich</span>
+            </div>
+            <h3>Kopf- &amp; Schultermassage</h3>
+            <p>
+              Angenehme Behandlung für Schulter-, Nacken- und Kopfbereich mit klarem Wohlfühlfaktor.
+            </p>
+            <div class="price-list">
+              <div class="price-row"><span>30 Minuten</span><strong>32,- €</strong></div>
+              <div class="price-row"><span>60 Minuten</span><strong>50,- €</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split-grid">
+        <div class="section-card reveal">
+          <span class="section-kicker">Wirkung & Wohlbefinden</span>
+          <h2 class="section-title" style="margin-bottom:14px;">Was Thai-Massage unterstützen kann</h2>
+          <p class="section-desc" style="max-width:none;">
+            Auf der offiziellen Website werden unter anderem Kopfschmerzen, Schlafstörungen, Schwindel,
+            Rückenschmerzen oder Knieschmerzen im Zusammenhang mit der traditionellen Lehre der Thai-Massage genannt.
+            Für eine moderne Website ist es sinnvoll, diese Aussagen zurückhaltend und stilvoll als Wellness-Kontext
+            einzuordnen.
+          </p>
+
+          <div class="two-col-list">
+            <div>Tiefe Entspannung</div>
+            <div>Lockerung verspannter Bereiche</div>
+            <div>Bewusste Entschleunigung</div>
+            <div>Wohltuende Auszeit im Alltag</div>
+            <div>Traditionelle Berührungskultur</div>
+            <div>Ganzheitliches Körpergefühl</div>
+          </div>
+        </div>
+
+        <div class="highlight-card reveal">
+          <div>
+            <blockquote>„Uralte heilsame Berührung“ – traditionell gedacht, stilvoll digital präsentiert.</blockquote>
+            <p>
+              Die Premium-Version setzt stärker auf Markenwirkung: ruhige Typografie, hochwertige Sektionen,
+              bessere mobile Navigation und eine klarere Struktur für lokale Sichtbarkeit.
+            </p>
+          </div>
+          <div style="margin-top:24px;">
+            <a class="btn btn-primary" href="tel:+4922342004237">Jetzt anrufen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="preise">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-kicker">Preise</span>
+            <h2 class="section-title">Preisübersicht auf einen Blick</h2>
+          </div>
+          <p class="section-desc">
+            Klar aufgebaut, damit Nutzer sofort sehen, welche Behandlungen und Dauern angeboten werden.
+          </p>
+        </div>
+
+        <div class="price-overview">
+          <div class="price-card reveal">
+            <table class="price-table" aria-label="Preisübersicht Reh´s Thaimassage">
+              <thead>
+                <tr>
+                  <th>Leistung</th>
+                  <th>Dauer</th>
+                  <th>Preis</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Traditionelle Thai-Massage</td>
+                  <td>30 Min.</td>
+                  <td>32,- €</td>
+                </tr>
+                <tr>
+                  <td>Traditionelle Thai-Massage</td>
+                  <td>60 Min.</td>
+                  <td>50,- €</td>
+                </tr>
+                <tr>
+                  <td>Traditionelle Thai-Massage</td>
+                  <td>90 Min.</td>
+                  <td>82,- €</td>
+                </tr>
+                <tr>
+                  <td>Traditionelle Thai-Massage</td>
+                  <td>120 Min.</td>
+                  <td>95,- €</td>
+                </tr>
+                <tr>
+                  <td>Fußmassage</td>
+                  <td>30 Min.</td>
+                  <td>32,- €</td>
+                </tr>
+                <tr>
+                  <td>Fußmassage</td>
+                  <td>60 Min.</td>
+                  <td>50,- €</td>
+                </tr>
+                <tr>
+                  <td>Kopf- &amp; Schultermassage</td>
+                  <td>30 Min.</td>
+                  <td>32,- €</td>
+                </tr>
+                <tr>
+                  <td>Kopf- &amp; Schultermassage</td>
+                  <td>60 Min.</td>
+                  <td>50,- €</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <aside class="price-card reveal">
+            <div class="callout">
+              <h3>Telefonische Terminvereinbarung</h3>
+              <p>Die offizielle Seite bittet ausdrücklich um telefonische Terminvereinbarung.</p>
+            </div>
+
+            <div class="callout">
+              <h3>Ideal für Geschenkideen</h3>
+              <p>Alle Massagen sind auch als Geschenkgutschein erhältlich.</p>
+            </div>
+
+            <div class="callout">
+              <h3>Starke lokale Nutzerführung</h3>
+              <p>Die Premium-Seite legt Telefon, Route und Öffnungszeiten an besonders prominente Stellen.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="galerie">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-kicker">Studio</span>
+            <h2 class="section-title">Premium-Galerie-Struktur für eigene Bilder</h2>
+          </div>
+          <p class="section-desc">
+            Diese Sektion ist absichtlich professionell vorbereitet. Du kannst hier später echte Studiofotos
+            oder Raumaufnahmen einsetzen, ohne das Layout neu bauen zu müssen.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-main">
+            <div class="gallery-card tall reveal">
+              <div class="gallery-label">
+                <strong>Hero- oder Studiobild</strong>
+                <span>Hier später ein hochwertiges Hauptbild vom Behandlungsraum oder Eingangsbereich einsetzen.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-side">
+            <div class="gallery-card reveal">
+              <div class="gallery-label">
+                <strong>Atmosphäre</strong>
+                <span>Ideal für Details wie Deko, Raumstimmung, Liege oder traditionelles Ambiente.</span>
+              </div>
+            </div>
+
+            <div class="gallery-card reveal">
+              <div class="gallery-label">
+                <strong>Behandlungsraum</strong>
+                <span>Optional mit echtem Studiofoto für deutlich mehr Vertrauen und Premium-Wirkung.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gutscheine">
+      <div class="container split-grid">
+        <div class="section-card reveal">
+          <span class="section-kicker">Gutscheine</span>
+          <h2 class="section-title" style="margin-bottom:14px;">Wellness stilvoll verschenken</h2>
+          <p class="section-desc" style="max-width:none;">
+            Laut offizieller Seite sind alle Massagen auch als Geschenkgutschein erhältlich und während der
+            Öffnungszeiten im Geschäft verfügbar.
+          </p>
+
+          <div class="two-col-list">
+            <div>Für Geburtstage</div>
+            <div>Für Feiertage</div>
+            <div>Für besondere Anlässe</div>
+            <div>Direkt vor Ort erhältlich</div>
+          </div>
+
+          <div style="margin-top:24px;">
+            <a class="btn btn-primary" href="tel:+4922342004237">Gutschein telefonisch anfragen</a>
+          </div>
+        </div>
+
+        <div class="section-card reveal">
+          <span class="section-kicker">Persönliche Daten</span>
+          <h2 class="section-title" style="margin-bottom:14px;">Kontakt, Inhaberin und Standort klar dargestellt</h2>
+          <p class="section-desc" style="max-width:none;">
+            Gerade bei lokalen Wellness-Angeboten sorgt eine klare, ruhige und glaubwürdige Darstellung von
+            Inhaberin, Adresse und Erreichbarkeit für deutlich mehr Vertrauen.
+          </p>
+
+          <div class="contact-stack">
+            <div class="contact-item">
+              <strong>Studio</strong>
+              <span>Reh´s Thai-Massage</span>
+            </div>
+            <div class="contact-item">
+              <strong>Inhaberin</strong>
+              <span>Chorphaka Riedel</span>
+            </div>
+            <div class="contact-item">
+              <strong>Standort</strong>
+              <span>Bahnstraße 100 · 50858 Köln-Weiden</span>
+            </div>
+            <div class="contact-item">
+              <strong>Telefon</strong>
+              <a href="tel:+4922342004237">02234 - 2004237</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-kicker">Kontakt & Anfahrt</span>
+            <h2 class="section-title">Direkt erreichbar in Köln-Weiden</h2>
+          </div>
+          <p class="section-desc">
+            Adresse, Öffnungszeiten und Anfahrt sind gezielt conversion-stark eingebunden, damit Besucher
+            ohne Umwege Kontakt aufnehmen können.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <span class="section-kicker">Alle Infos auf einen Blick</span>
+            <h2 class="section-title" style="margin-bottom:14px;">Termin, Öffnungszeiten und Route</h2>
+            <p class="section-desc" style="max-width:none;">
+              Gut sichtbar für Desktop und mobil. Besonders wichtig für lokale SEO und Nutzer, die direkt
+              vom Smartphone anrufen oder die Route öffnen möchten.
+            </p>
+
+            <div class="contact-stack">
+              <div class="contact-item">
+                <strong>Adresse</strong>
+                <span>Bahnstraße 100<br />50858 Köln-Weiden</span>
+              </div>
+              <div class="contact-item">
+                <strong>Telefon</strong>
+                <a href="tel:+4922342004237">02234 - 2004237</a>
+              </div>
+              <div class="contact-item">
+                <strong>Öffnungszeiten</strong>
+                <span>Di.–Sa. 10:00 – 20:00 Uhr<br />Sonntag 11:00 – 19:00 Uhr</span>
+              </div>
+              <div class="contact-item">
+                <strong>ÖPNV</strong>
+                <span>KVB Linie 1 · Haltestelle „Bahnstraße“</span>
+              </div>
+            </div>
+
+            <div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:14px;">
+              <a class="btn btn-primary" href="tel:+4922342004237">Jetzt anrufen</a>
+              <a
+                class="btn btn-secondary"
+                href="https://maps.google.com/?q=Reh%C2%B4s+Thai-Massage+Bahnstra%C3%9Fe+100+50858+K%C3%B6ln"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Route öffnen
+              </a>
+            </div>
+          </div>
+
+          <div class="map-wrap reveal">
+            <iframe
+              title="Karte Reh´s Thaimassage Köln-Weiden"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Reh%C2%B4s%20Thai-Massage%2C%20Bahnstra%C3%9Fe%20100%2C%2050858%20K%C3%B6ln&z=16&output=embed">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-kicker">FAQ</span>
+            <h2 class="section-title">Häufige Fragen kompakt beantwortet</h2>
+          </div>
+          <p class="section-desc">
+            Diese Sektion macht die Seite vollständiger, vertrauensvoller und suchmaschinenfreundlicher.
+          </p>
+        </div>
+
+        <div class="faq-grid">
+          <article class="faq-item reveal">
+            <h3>Wie vereinbare ich einen Termin?</h3>
+            <p>Am schnellsten telefonisch unter 02234 - 2004237.</p>
+          </article>
+
+          <article class="faq-item reveal">
+            <h3>Welche Behandlungen werden angeboten?</h3>
+            <p>Traditionelle Thai-Massage, Fußmassage sowie Kopf- und Schultermassage.</p>
+          </article>
+
+          <article class="faq-item reveal">
+            <h3>Gibt es Gutscheine?</h3>
+            <p>Ja, alle Massagen sind auch als Geschenkgutschein erhältlich.</p>
+          </article>
+
+          <article class="faq-item reveal">
+            <h3>Wie ist das Studio erreichbar?</h3>
+            <p>Mit der KVB Linie 1 bis zur Haltestelle „Bahnstraße“ oder per Route über Google Maps.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-row">
+            <div>
+              <span class="section-kicker" style="color:rgba(255,255,255,0.72);">Terminvereinbarung</span>
+              <h2 class="section-title" style="color:#fff;">Jetzt Ihre Auszeit in Köln-Weiden planen</h2>
+              <p>
+                Die Seite ist bewusst darauf optimiert, dass Nutzer sofort handeln können: anrufen, Preise sehen,
+                Studio wahrnehmen und die Route direkt öffnen.
+              </p>
+            </div>
+            <a class="btn btn-primary" href="tel:+4922342004237">02234 - 2004237</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© Reh´s Thaimassage · Bahnstraße 100 · 50858 Köln-Weiden</div>
+      <div class="footer-links">
+        <a href="https://www.rehs-thaimassage.de/" target="_blank" rel="noopener noreferrer">Offizielle Website</a>
+        <a href="https://www.rehs-thaimassage.de/index.php/impressum" target="_blank" rel="noopener noreferrer">Impressum</a>
+        <a href="https://www.rehs-thaimassage.de/index.php/datenschutzerklaerung" target="_blank" rel="noopener noreferrer">Datenschutz</a>
+        <a href="tel:+4922342004237">Telefon</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-cta" aria-hidden="false">
+    <div class="floating-cta-inner">
+      <div class="floating-cta-text">
+        <strong>Reh´s Thaimassage · Köln-Weiden</strong>
+        <span>Telefonische Terminvereinbarung · schnelle mobile Kontaktaufnahme</span>
+      </div>
+      <div class="floating-cta-actions">
+        <a class="btn btn-primary" href="tel:+4922342004237">Anrufen</a>
+        <a
+          class="btn btn-secondary"
+          href="https://maps.google.com/?q=Reh%C2%B4s+Thai-Massage+Bahnstra%C3%9Fe+100+50858+K%C3%B6ln"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Route
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const body = document.body;
+    const mobileToggle = document.getElementById("mobileToggle");
+    const mobileClose = document.getElementById("mobileClose");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const mobileOverlay = document.getElementById("mobileOverlay");
+    const mobileLinks = mobileMenu.querySelectorAll("a");
+
+    function openMenu() {
+      body.classList.add("menu-open");
+      mobileMenu.setAttribute("aria-hidden", "false");
+      mobileToggle.setAttribute("aria-expanded", "true");
+    }
+
+    function closeMenu() {
+      body.classList.remove("menu-open");
+      mobileMenu.setAttribute("aria-hidden", "true");
+      mobileToggle.setAttribute("aria-expanded", "false");
+    }
+
+    mobileToggle.addEventListener("click", () => {
+      if (body.classList.contains("menu-open")) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    mobileClose.addEventListener("click", closeMenu);
+    mobileOverlay.addEventListener("click", closeMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeMenu();
+    });
+
+    const reveals = document.querySelectorAll(".reveal");
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    reveals.forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+</html>
