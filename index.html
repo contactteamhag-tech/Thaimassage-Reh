@@ -4,1807 +4,1613 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Reh´s Thaimassage – Traditionelle Thai-Massage in Köln-Weiden</title>
+  <title>Reh’s Thaimassage – Traditionelle Thai Massage in Weiden</title>
   <meta
     name="description"
-    content="Reh´s Thaimassage in Köln-Weiden – traditionelle Thai-Massage, Fußmassage und Kopf- & Schultermassage. Hochwertige Entspannung in ruhiger Atmosphäre. Jetzt Termin telefonisch vereinbaren."
+    content="Reh’s Thaimassage in Weiden – traditionelle Thai Massage, Aromaöl Massage, Hot Stone und Kräuterstempel in stilvoller Atmosphäre. Jetzt Termin per WhatsApp oder Telefon anfragen."
   />
   <meta
     name="keywords"
-    content="Reh´s Thaimassage, Thai Massage Köln, Thai Massage Köln Weiden, Thaimassage Köln Weiden, Bahnstraße 100 Köln, Fußmassage Köln, Schultermassage Köln, traditionelle Thai Massage Köln"
+    content="Reh’s Thaimassage, Thai Massage Weiden, Thaimassage Weiden, Wellness Weiden, Aromaöl Massage, Hot Stone, Kräuterstempel"
   />
-  <meta name="theme-color" content="#b48858" />
-
-  <meta property="og:title" content="Reh´s Thaimassage – Traditionelle Thai-Massage in Köln-Weiden" />
-  <meta
-    property="og:description"
-    content="Traditionelle Thai-Massage in Köln-Weiden. Telefonische Terminvereinbarung, klare Preisstruktur und stilvolle Wellness-Präsenz."
-  />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.rehs-thaimassage.de/" />
+  <meta name="theme-color" content="#6e9b3a" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+Thai:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
     rel="stylesheet"
   />
 
   <style>
-    :root {
-      --bg: #f7f2eb;
-      --bg-soft: #fbf8f4;
-      --surface: rgba(255,255,255,0.84);
-      --surface-strong: #ffffff;
-      --text: #1e1813;
-      --muted: #6c6257;
-      --line: rgba(30, 24, 19, 0.08);
-      --gold: #b48858;
-      --gold-dark: #8f6638;
-      --brown: #372719;
-      --brown-soft: #4b3522;
-      --shadow: 0 18px 42px rgba(39, 27, 14, 0.08);
-      --shadow-strong: 0 24px 60px rgba(39, 27, 14, 0.13);
-      --radius-xl: 32px;
-      --radius-lg: 24px;
-      --radius-md: 18px;
-      --radius-sm: 14px;
-      --max: 1240px;
-      --header-h: 86px;
+    :root{
+      --green:#6e9b3a;
+      --green-dark:#456825;
+      --green-soft:#eef5e8;
+      --gold:#c5a56a;
+      --text:#23301f;
+      --muted:#667060;
+      --white:#ffffff;
+      --line:rgba(69,104,37,0.12);
+      --shadow:0 20px 60px rgba(28,39,22,0.10);
+      --shadow-soft:0 10px 30px rgba(28,39,22,0.08);
+      --radius-xl:30px;
+      --radius-lg:22px;
+      --radius-md:16px;
+      --container:1240px;
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      color:var(--text);
+      line-height:1.6;
+      background-color:#f8faf5;
+      position:relative;
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      z-index:-2;
+      background-image:url("images/patternrehs.webp");
+      background-repeat:repeat;
+      background-position:center top;
+      background-size:820px auto;
+      opacity:0.74;
+      pointer-events:none;
+    }
+
+    body::after{
+      content:"";
+      position:fixed;
+      inset:0;
+      z-index:-1;
+      background:rgba(255,255,255,0.24);
+      pointer-events:none;
+    }
+
+    img{
+      display:block;
+      max-width:100%;
+    }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    .container{
+      width:min(var(--container), calc(100% - 32px));
+      margin:0 auto;
+    }
+
+    .topbar{
+      background:linear-gradient(90deg, var(--green-dark), var(--green));
+      color:#fff;
+      font-size:14px;
+      font-weight:600;
+    }
+
+    .topbar-inner{
+      min-height:46px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:18px;
+      flex-wrap:wrap;
+      padding:10px 0;
+    }
+
+    .header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(255,255,255,0.90);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(69,104,37,0.08);
+    }
+
+    .header-inner{
+      min-height:94px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      flex-wrap:nowrap;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      min-width:0;
+      flex-shrink:0;
+    }
+
+    .brand-logo{
+      width:92px;
+      height:92px;
+      object-fit:contain;
+      flex-shrink:0;
+    }
+
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+    }
+
+    .brand-title{
+      font-size:1.05rem;
+      font-weight:800;
+      color:var(--green-dark);
+      letter-spacing:0.03em;
+    }
+
+    .brand-sub{
+      font-size:0.9rem;
+      color:var(--muted);
+      font-weight:600;
+    }
+
+    .nav{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:nowrap;
+      white-space:nowrap;
+      justify-content:center;
+      flex:1 1 auto;
+      min-width:0;
+    }
+
+    .nav a{
+      font-weight:700;
+      color:#314327;
+      position:relative;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      line-height:1.15;
+      text-align:center;
+      flex-shrink:0;
+    }
+
+    .nav a::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:-7px;
+      width:0;
+      height:2px;
+      background:var(--green);
+      transition:width .25s ease;
+    }
+
+    .nav a:hover::after{
+      width:100%;
+    }
+
+    .nav-thai{
+      font-family:'Noto Serif Thai', serif;
+      font-size:0.72rem;
+      font-weight:600;
+      color:var(--gold);
+      margin-top:4px;
+      letter-spacing:0.01em;
+    }
+
+    .header-actions{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      flex-wrap:nowrap;
+      flex-shrink:0;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      padding:14px 22px;
+      border-radius:999px;
+      font-weight:800;
+      font-size:0.96rem;
+      transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+      box-shadow:var(--shadow-soft);
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+    }
+
+    .btn-primary{
+      background:var(--green);
+      color:#fff;
+    }
+
+    .btn-primary:hover{
+      background:var(--green-dark);
+    }
+
+    .btn-secondary{
+      background:rgba(255,255,255,0.92);
+      color:var(--green-dark);
+      border:1px solid rgba(69,104,37,0.14);
+    }
+
+    .hero{
+      padding:70px 0 52px;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.02fr 0.98fr;
+      gap:34px;
+      align-items:center;
+    }
+
+    .hero-copy{
+      background:rgba(255,255,255,0.78);
+      border:1px solid rgba(69,104,37,0.08);
+      backdrop-filter:blur(10px);
+      border-radius:34px;
+      padding:42px;
+      box-shadow:var(--shadow);
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      border-radius:999px;
+      background:var(--green-soft);
+      color:var(--green-dark);
+      font-weight:800;
+      letter-spacing:0.04em;
+      font-size:0.82rem;
+      padding:9px 14px;
+      margin-bottom:18px;
+      text-transform:uppercase;
+      border:1px solid rgba(197,165,106,0.34);
+      gap:8px;
+    }
+
+    .eyebrow::before,
+    .eyebrow::after{
+      content:"✦";
+      color:var(--gold);
+      font-size:0.82rem;
+      line-height:1;
+    }
+
+    .hero h1{
+      font-family:'Playfair Display','Noto Serif Thai',serif;
+      font-size:clamp(2.6rem,5vw,4.9rem);
+      line-height:1.03;
+      color:#243d18;
+      margin-bottom:16px;
+    }
+
+    .hero p{
+      font-size:1.08rem;
+      color:#4f5849;
+      max-width:720px;
+    }
+
+    .hero-actions{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:26px;
+    }
+
+    .hero-facts{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:14px;
+      margin-top:28px;
+    }
+
+    .hero-fact{
+      background:rgba(255,255,255,0.88);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:16px;
+      box-shadow:var(--shadow-soft);
+      position:relative;
+    }
+
+    .hero-fact::before{
+      content:"";
+      position:absolute;
+      left:0;
+      top:0;
+      width:100%;
+      height:3px;
+      background:linear-gradient(90deg, rgba(197,165,106,0), rgba(197,165,106,0.92), rgba(197,165,106,0));
+      border-radius:18px 18px 0 0;
+    }
+
+    .hero-fact strong{
+      display:block;
+      font-size:1rem;
+      color:var(--green-dark);
+      margin-bottom:4px;
+    }
+
+    .hero-fact span{
+      color:var(--muted);
+      font-size:0.93rem;
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      color: var(--text);
-      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(180, 136, 88, 0.14), transparent 26%),
-        radial-gradient(circle at bottom right, rgba(143, 102, 56, 0.10), transparent 24%),
-        linear-gradient(180deg, #fcf9f5 0%, #f7f2eb 48%, #f3ede5 100%);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    body.menu-open {
-      overflow: hidden;
-    }
-
-    img {
-      display: block;
-      max-width: 100%;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    button {
-      font: inherit;
-    }
-
-    .container {
-      width: min(calc(100% - 32px), var(--max));
-      margin: 0 auto;
+
+    .hero-visual{
+      position:relative;
+    }
+
+    .hero-image{
+      border-radius:36px;
+      overflow:hidden;
+      box-shadow:0 28px 70px rgba(28,39,22,0.17);
+      background:#e6eddc;
+      position:relative;
+    }
+
+    .hero-image::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      border:1px solid rgba(197,165,106,0.20);
+      border-radius:36px;
+      pointer-events:none;
+    }
+
+    .hero-image img{
+      width:100%;
+      height:680px;
+      object-fit:cover;
+    }
+
+    .hero-card{
+      position:absolute;
+      right:-18px;
+      bottom:20px;
+      width:min(290px, 72%);
+      background:rgba(255,255,255,0.93);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:20px;
+      box-shadow:var(--shadow);
+    }
+
+    .hero-card h3{
+      color:var(--green-dark);
+      font-size:1.08rem;
+      margin-bottom:8px;
+      font-family:'Playfair Display','Noto Serif Thai',serif;
+    }
+
+    .hero-card p{
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+
+    .section{
+      padding:84px 0;
+    }
+
+    .section-head{
+      max-width:780px;
+      margin:0 auto 42px;
+      text-align:center;
+    }
+
+    .section-head .kicker{
+      display:inline-flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:12px;
+      color:var(--green-dark);
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-size:0.8rem;
+      position:relative;
+      padding:0 28px;
+      line-height:1.1;
+    }
+
+    .section-head .kicker::before,
+    .section-head .kicker::after{
+      content:"✦";
+      position:absolute;
+      top:0.35em;
+      transform:translateY(-50%);
+      color:var(--gold);
+      font-size:0.78rem;
+    }
+
+    .section-head .kicker::before{
+      left:0;
+    }
+
+    .section-head .kicker::after{
+      right:0;
     }
 
-    .topbar {
-      background: linear-gradient(90deg, #2c1f13, #3a2918);
-      color: rgba(255,255,255,0.92);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      font-size: 0.94rem;
+    .kicker-thai{
+      margin-top:6px;
+      font-family:'Noto Serif Thai', serif;
+      font-size:0.9rem;
+      font-weight:600;
+      letter-spacing:0.01em;
+      color:var(--gold);
+      text-transform:none;
+      line-height:1.1;
     }
 
-    .topbar-inner {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 8px 18px;
-      min-height: 48px;
-      padding: 10px 0;
-      text-align: center;
-    }
-
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 1100;
-      background: rgba(251, 248, 244, 0.82);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(30, 24, 19, 0.06);
+    .section-head h2{
+      font-family:'Playfair Display','Noto Serif Thai',serif;
+      font-size:clamp(2rem, 4vw, 3rem);
+      line-height:1.08;
+      color:#263e1b;
+      margin-bottom:14px;
+      position:relative;
     }
 
-    .nav {
-      min-height: var(--header-h);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
+    .section-head h2::after{
+      content:"";
+      display:block;
+      width:92px;
+      height:2px;
+      margin:12px auto 0;
+      background:linear-gradient(90deg, rgba(197,165,106,0), rgba(197,165,106,1), rgba(197,165,106,0));
+      border-radius:999px;
     }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      min-width: 0;
-    }
-
-    .brand-mark {
-      width: 54px;
-      height: 54px;
-      border-radius: 16px;
-      flex-shrink: 0;
-      position: relative;
-      background:
-        radial-gradient(circle at 50% 30%, rgba(255,255,255,0.95), rgba(255,255,255,0.15) 34%, transparent 36%),
-        linear-gradient(135deg, #d1ad7a, #8f6638);
-      box-shadow: inset 0 1px 1px rgba(255,255,255,0.45), 0 10px 24px rgba(143, 102, 56, 0.22);
-    }
-
-    .brand-mark::before {
-      content: "✦";
-      position: absolute;
-      inset: 0;
-      display: grid;
-      place-items: center;
-      color: rgba(255,255,255,0.92);
-      font-weight: 800;
-      font-size: 1.05rem;
-    }
-
-    .brand-title {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 1.92rem;
-      font-weight: 700;
-      line-height: 1;
-      letter-spacing: 0.01em;
-    }
-
-    .brand-subtitle {
-      margin-top: 3px;
-      font-size: 0.82rem;
-      color: var(--muted);
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
+    .section-head p{
+      color:var(--muted);
+      font-size:1.02rem;
     }
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      flex-wrap: wrap;
+    .card{
+      background:rgba(255,255,255,0.84);
+      border:1px solid var(--line);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow-soft);
+      backdrop-filter:blur(6px);
+      position:relative;
     }
 
-    .nav-links a {
-      color: #4b4035;
-      font-weight: 500;
-      font-size: 0.96rem;
-      transition: color 0.2s ease, opacity 0.2s ease;
+    .card::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      border-radius:inherit;
+      border:1px solid rgba(197,165,106,0.10);
+      pointer-events:none;
     }
 
-    .nav-links a:hover {
-      color: var(--gold-dark);
+    .about-grid{
+      display:grid;
+      grid-template-columns:0.9fr 1.1fr;
+      gap:28px;
+      align-items:stretch;
     }
 
-    .nav-cta {
-      display: flex;
-      align-items: center;
-      gap: 12px;
+    .about-image{
+      overflow:hidden;
     }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      border: 0;
-      cursor: pointer;
-      border-radius: 999px;
-      padding: 14px 22px;
-      font-weight: 700;
-      font-size: 0.96rem;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+
+    .about-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .about-copy{
+      padding:36px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+
+    .about-copy h3{
+      font-family:'Playfair Display','Noto Serif Thai',serif;
+      font-size:2rem;
+      color:var(--green-dark);
+      margin-bottom:16px;
+    }
+
+    .about-copy p{
+      color:#4f5949;
+      margin-bottom:14px;
+    }
+
+    .about-mini-kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      align-self:flex-start;
+      padding:8px 14px;
+      margin-bottom:14px;
+      border-radius:999px;
+      background:var(--green-soft);
+      border:1px solid rgba(197,165,106,0.32);
+      color:var(--green-dark);
+      font-size:0.78rem;
+      font-weight:800;
+      letter-spacing:0.06em;
+      text-transform:uppercase;
+    }
+
+    .about-mini-kicker::before,
+    .about-mini-kicker::after{
+      content:"✦";
+      color:var(--gold);
+      font-size:0.8rem;
+      line-height:1;
+    }
+
+    .about-highlight{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:14px;
+      margin:10px 0 18px;
+    }
+
+    .about-highlight-item{
+      background:rgba(255,255,255,0.92);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:16px;
+      box-shadow:var(--shadow-soft);
+    }
+
+    .about-highlight-item strong{
+      display:block;
+      color:var(--green-dark);
+      font-size:1rem;
+      margin-bottom:6px;
+    }
+
+    .about-highlight-item span{
+      color:var(--muted);
+      font-size:0.94rem;
+      line-height:1.55;
+    }
+
+    .about-points{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:14px;
+      margin-top:8px;
     }
 
-    .btn:hover {
-      transform: translateY(-1px);
-    }
-
-    .btn-primary {
-      color: #fff;
-      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-      box-shadow: 0 16px 34px rgba(143, 102, 56, 0.24);
-    }
-
-    .btn-secondary {
-      color: var(--brown);
-      background: rgba(255,255,255,0.78);
-      border: 1px solid rgba(30,24,19,0.08);
-      box-shadow: 0 10px 22px rgba(39, 27, 14, 0.06);
-    }
-
-    .mobile-toggle {
-      display: none;
-      width: 48px;
-      height: 48px;
-      border-radius: 14px;
-      border: 1px solid rgba(30,24,19,0.08);
-      background: rgba(255,255,255,0.82);
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      box-shadow: 0 10px 22px rgba(39, 27, 14, 0.06);
-      padding: 0;
-    }
-
-    .mobile-toggle span,
-    .mobile-toggle span::before,
-    .mobile-toggle span::after {
-      content: "";
-      display: block;
-      width: 20px;
-      height: 2px;
-      border-radius: 999px;
-      background: var(--brown);
-      position: relative;
-      transition: transform 0.25s ease, opacity 0.25s ease;
-    }
-
-    .mobile-toggle span::before {
-      position: absolute;
-      top: -6px;
-    }
-
-    .mobile-toggle span::after {
-      position: absolute;
-      top: 6px;
-    }
-
-    .mobile-menu {
-      display: none;
-    }
-
-    .mobile-overlay {
-      display: none;
-    }
-
-    .hero {
-      padding: 72px 0 38px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
-      gap: 26px;
-      align-items: stretch;
+    .about-point{
+      background:rgba(255,255,255,0.90);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:16px;
+      font-weight:700;
+      color:#314227;
+      position:relative;
+      padding-left:42px;
     }
 
-    .hero-card,
-    .section-card,
-    .info-card,
-    .service-card,
-    .contact-card,
-    .gallery-card,
-    .faq-item,
-    .cta-box,
-    .highlight-card {
-      background: linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.82));
-      border: 1px solid rgba(30,24,19,0.07);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(10px);
-    }
-
-    .hero-card {
-      border-radius: 36px;
-      padding: 54px;
-      position: relative;
-      overflow: hidden;
-      background:
-        radial-gradient(circle at top right, rgba(180, 136, 88, 0.14), transparent 35%),
-        linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.84));
-    }
-
-    .hero-card::after {
-      content: "";
-      position: absolute;
-      width: 240px;
-      height: 240px;
-      border-radius: 50%;
-      right: -70px;
-      bottom: -70px;
-      background: radial-gradient(circle, rgba(180, 136, 88, 0.16), transparent 70%);
-      pointer-events: none;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 9px 14px;
-      border-radius: 999px;
-      background: rgba(180, 136, 88, 0.12);
-      color: var(--gold-dark);
-      font-size: 0.82rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 18px;
-    }
-
-    h1, h2, h3, h4 {
-      margin: 0;
-      line-height: 1.08;
-    }
-
-    h1 {
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(2.9rem, 5vw, 5.15rem);
-      letter-spacing: -0.02em;
-      font-weight: 700;
-    }
-
-    .hero-text {
-      margin-top: 20px;
-      max-width: 760px;
-      color: #4e453c;
-      font-size: 1.07rem;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 28px;
-    }
-
-    .hero-points {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 34px;
-    }
-
-    .hero-point {
-      padding: 18px;
-      border-radius: 18px;
-      background: rgba(255,255,255,0.72);
-      border: 1px solid rgba(30,24,19,0.06);
-    }
-
-    .hero-point strong {
-      display: block;
-      margin-bottom: 5px;
-      font-size: 0.98rem;
-    }
-
-    .hero-point span {
-      color: var(--muted);
-      font-size: 0.93rem;
-    }
-
-    .hero-visual {
-      min-height: 100%;
-      border-radius: 34px;
-      overflow: hidden;
-      border: 1px solid rgba(30,24,19,0.08);
-      position: relative;
-      box-shadow: var(--shadow-strong);
-      background:
-        linear-gradient(180deg, rgba(34,25,16,0.10), rgba(34,25,16,0.25)),
-        radial-gradient(circle at 18% 18%, rgba(255,255,255,0.24), transparent 18%),
-        linear-gradient(135deg, #9e7445 0%, #eadac5 54%, #8d6336 100%);
-      display: flex;
-      align-items: flex-end;
-    }
-
-    .hero-visual::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        repeating-linear-gradient(
-          135deg,
-          rgba(255,255,255,0.04) 0,
-          rgba(255,255,255,0.04) 8px,
-          transparent 8px,
-          transparent 24px
-        );
-      opacity: 0.32;
-    }
-
-    .hero-visual::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 82% 15%, rgba(255,255,255,0.16), transparent 20%),
-        linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.06) 52%, transparent 100%);
-      mix-blend-mode: screen;
-    }
-
-    .visual-content {
-      position: relative;
-      z-index: 2;
-      width: 100%;
-      color: #fff;
-      padding: 34px;
-    }
+    .about-point::before{
+      content:"✦";
+      position:absolute;
+      left:16px;
+      top:50%;
+      transform:translateY(-50%);
+      color:var(--gold);
+      font-size:0.95rem;
+    }
+
+    .about-note{
+      margin-top:18px;
+      padding:18px 20px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(238,245,232,0.95), rgba(255,255,255,0.92));
+      border:1px solid rgba(197,165,106,0.22);
+      color:#42503d;
+      font-weight:600;
+    }
 
-    .visual-label {
-      display: inline-block;
-      margin-bottom: 14px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.16);
-      border: 1px solid rgba(255,255,255,0.16);
-      font-size: 0.8rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .visual-content h2 {
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      margin-bottom: 10px;
-    }
-
-    .visual-content p {
-      max-width: 420px;
-      color: rgba(255,255,255,0.9);
-      margin: 0;
-    }
-
-    section {
-      padding: 38px 0;
-    }
-
-    .section-head {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 20px;
-      margin-bottom: 24px;
-    }
-
-    .section-kicker {
-      display: block;
-      margin-bottom: 10px;
-      color: var(--gold-dark);
-      font-size: 0.84rem;
-      font-weight: 800;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
+    .services-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:22px;
     }
 
-    .section-title {
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(2rem, 3vw, 3.15rem);
-      font-weight: 700;
-    }
-
-    .section-desc {
-      max-width: 740px;
-      color: var(--muted);
-      font-size: 1rem;
-    }
-
-    .info-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 18px;
+    .service-card{
+      padding:28px;
     }
 
-    .info-card {
-      border-radius: 24px;
-      padding: 26px;
+    .service-top{
+      display:flex;
+      justify-content:space-between;
+      gap:14px;
+      align-items:flex-start;
+      margin-bottom:14px;
     }
 
-    .info-icon {
-      width: 42px;
-      height: 42px;
-      display: grid;
-      place-items: center;
-      border-radius: 14px;
-      background: rgba(180,136,88,0.12);
-      color: var(--gold-dark);
-      font-weight: 800;
-      margin-bottom: 16px;
+    .service-card h3{
+      font-family:'Playfair Display','Noto Serif Thai',serif;
+      font-size:1.5rem;
+      color:#29401d;
     }
 
-    .info-card h3 {
-      font-size: 1.05rem;
-      margin-bottom: 8px;
+    .badge{
+      flex-shrink:0;
+      background:var(--green-soft);
+      color:var(--green-dark);
+      border-radius:999px;
+      padding:8px 12px;
+      font-size:0.82rem;
+      font-weight:800;
+      border:1px solid rgba(197,165,106,0.34);
     }
 
-    .info-card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.96rem;
+    .service-card p{
+      color:var(--muted);
+      margin-bottom:16px;
     }
 
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 20px;
-    }
-
-    .service-card {
-      border-radius: 26px;
-      padding: 26px;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .service-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
+    .service-prices{
+      display:grid;
+      gap:10px;
+      margin-bottom:20px;
     }
-
-    .service-badge {
-      display: inline-flex;
-      align-items: center;
-      padding: 8px 11px;
-      border-radius: 999px;
-      background: rgba(180,136,88,0.12);
-      color: var(--gold-dark);
-      font-size: 0.76rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
+
+    .service-prices div{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      padding-bottom:10px;
+      border-bottom:1px dashed rgba(69,104,37,0.16);
+      font-weight:700;
     }
 
-    .service-card h3 {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 1.95rem;
+    .service-prices span:last-child{
+      color:var(--green-dark);
     }
 
-    .service-card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.97rem;
+    .service-actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
     }
 
-    .price-list {
-      display: grid;
-      gap: 10px;
-      margin-top: auto;
+    .studio-grid{
+      display:grid;
+      grid-template-columns:1.15fr 0.85fr 0.85fr;
+      gap:18px;
     }
 
-    .price-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 13px 15px;
-      border-radius: 14px;
-      background: rgba(247,242,235,0.92);
-      border: 1px solid rgba(30,24,19,0.06);
-      font-size: 0.96rem;
+    .studio-card{
+      overflow:hidden;
+      min-height:280px;
+      position:relative;
     }
 
-    .price-row strong {
-      font-size: 1rem;
+    .studio-card img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:transform .45s ease;
     }
 
-    .split-grid {
-      display: grid;
-      grid-template-columns: 1.02fr 0.98fr;
-      gap: 22px;
+    .studio-card:hover img{
+      transform:scale(1.04);
     }
 
-    .section-card {
-      border-radius: 30px;
-      padding: 32px;
+    .studio-tall{
+      grid-row:span 2;
+      min-height:580px;
     }
 
-    .two-col-list {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px 18px;
-      margin-top: 22px;
+    .studio-label{
+      position:absolute;
+      left:16px;
+      bottom:16px;
+      background:rgba(255,255,255,0.92);
+      color:#2f4325;
+      padding:10px 14px;
+      border-radius:999px;
+      font-weight:800;
+      font-size:0.88rem;
+      box-shadow:var(--shadow-soft);
+      border:1px solid rgba(197,165,106,0.26);
     }
 
-    .two-col-list div {
-      padding: 14px 15px;
-      border-radius: 16px;
-      background: rgba(247,242,235,0.95);
-      border: 1px solid rgba(30,24,19,0.06);
-      color: #483f36;
-      font-size: 0.96rem;
-      font-weight: 500;
+    .gift-grid{
+      display:grid;
+      grid-template-columns:0.95fr 1.05fr;
+      gap:28px;
+      align-items:center;
     }
 
-    .highlight-card {
-      border-radius: 30px;
-      padding: 32px;
-      min-height: 100%;
-      background:
-        radial-gradient(circle at top right, rgba(180,136,88,0.18), transparent 32%),
-        linear-gradient(180deg, #2d2014, #3e2d1c);
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    .gift-image{
+      overflow:hidden;
     }
 
-    .highlight-card blockquote {
-      margin: 0;
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(2rem, 3vw, 2.8rem);
-      line-height: 1.14;
-      font-weight: 600;
+    .gift-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
     }
 
-    .highlight-card p {
-      color: rgba(255,255,255,0.84);
-      margin: 18px 0 0;
-      max-width: 520px;
+    .gift-copy{
+      padding:36px;
     }
 
-    .price-overview {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 22px;
+    .gift-copy h3{
+      font-family:'Playfair Display','Noto Serif Thai',serif;
+      font-size:2rem;
+      color:var(--green-dark);
+      margin-bottom:14px;
     }
 
-    .price-card {
-      background: linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.82));
-      border: 1px solid rgba(30,24,19,0.07);
-      box-shadow: var(--shadow);
-      border-radius: 28px;
-      padding: 28px;
+    .gift-copy p{
+      color:var(--muted);
+      margin-bottom:14px;
     }
 
-    .price-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 8px;
+    .gift-kicker{
+      display:inline-flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:16px;
+      color:var(--green-dark);
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-size:0.82rem;
+      position:relative;
+      line-height:1.1;
+      background:var(--green-soft);
+      border:1px solid rgba(197,165,106,0.34);
+      border-radius:999px;
+      padding:9px 18px;
+      gap:4px;
     }
 
-    .price-table th,
-    .price-table td {
-      text-align: left;
-      padding: 16px 10px;
-      border-bottom: 1px solid rgba(30,24,19,0.08);
-      vertical-align: top;
-      font-size: 0.96rem;
+    .gift-kicker-top{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
     }
 
-    .price-table th {
-      color: var(--muted);
-      font-size: 0.84rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+    .reviews-grid{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:22px;
     }
 
-    .callout {
-      border-radius: 22px;
-      padding: 22px;
-      background: rgba(180,136,88,0.1);
-      border: 1px solid rgba(180,136,88,0.18);
+    .review-card{
+      padding:26px;
+      display:flex;
+      flex-direction:column;
+      gap:16px;
     }
 
-    .callout + .callout {
-      margin-top: 18px;
+    .review-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
     }
 
-    .callout h3 {
-      margin-bottom: 8px;
-      font-size: 1.14rem;
+    .review-user{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
     }
 
-    .callout p {
-      margin: 0;
-      color: #584d42;
+    .review-avatar{
+      width:54px;
+      height:54px;
+      border-radius:50%;
+      background:linear-gradient(135deg, #dcebcf, #b8d29a);
+      color:var(--green-dark);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:800;
+      font-size:1rem;
+      flex-shrink:0;
+      border:1px solid rgba(69,104,37,0.14);
+      box-shadow:var(--shadow-soft);
     }
 
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 20px;
+    .review-meta{
+      min-width:0;
     }
 
-    .gallery-main,
-    .gallery-side {
-      display: grid;
-      gap: 20px;
+    .review-name{
+      font-weight:800;
+      color:#2d4021;
+      font-size:1rem;
+      line-height:1.2;
     }
 
-    .gallery-card {
-      border-radius: 28px;
-      overflow: hidden;
-      position: relative;
-      min-height: 260px;
-      background:
-        linear-gradient(180deg, rgba(34,25,16,0.16), rgba(34,25,16,0.26)),
-        linear-gradient(135deg, #c8a16e 0%, #efe1cc 52%, #9a6f40 100%);
+    .review-source{
+      font-size:0.84rem;
+      color:var(--muted);
+      font-weight:600;
+      margin-top:2px;
     }
 
-    .gallery-card.tall {
-      min-height: 540px;
+    .google-badge{
+      flex-shrink:0;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:38px;
+      height:38px;
+      border-radius:50%;
+      background:#fff;
+      border:1px solid rgba(69,104,37,0.10);
+      font-weight:800;
+      color:#4285F4;
+      box-shadow:var(--shadow-soft);
+      font-size:1rem;
     }
 
-    .gallery-card::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 18% 16%, rgba(255,255,255,0.22), transparent 18%),
-        repeating-linear-gradient(
-          135deg,
-          rgba(255,255,255,0.04) 0,
-          rgba(255,255,255,0.04) 8px,
-          transparent 8px,
-          transparent 24px
-        );
-      opacity: 0.35;
+    .review-stars{
+      color:#f4b400;
+      letter-spacing:2px;
+      font-size:1rem;
+      font-weight:800;
     }
 
-    .gallery-label {
-      position: absolute;
-      left: 22px;
-      right: 22px;
-      bottom: 22px;
-      z-index: 2;
-      color: #fff;
-      padding: 18px 18px 16px;
-      border-radius: 20px;
-      background: rgba(22, 15, 10, 0.26);
-      border: 1px solid rgba(255,255,255,0.12);
-      backdrop-filter: blur(10px);
+    .review-text{
+      color:#4f5849;
+      font-size:0.98rem;
+      line-height:1.72;
+      flex:1;
     }
 
-    .gallery-label strong {
-      display: block;
-      font-size: 1rem;
-      margin-bottom: 4px;
+    .review-note{
+      font-size:0.8rem;
+      color:#7b8475;
+      border-top:1px dashed rgba(69,104,37,0.14);
+      padding-top:12px;
     }
 
-    .gallery-label span {
-      color: rgba(255,255,255,0.82);
-      font-size: 0.93rem;
+    .contact-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:24px;
+      align-items:stretch;
     }
 
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      gap: 22px;
+    .contact-card{
+      padding:32px;
     }
 
-    .contact-card {
-      border-radius: 30px;
-      padding: 30px;
+    .contact-card h3{
+      font-family:'Playfair Display','Noto Serif Thai',serif;
+      font-size:1.85rem;
+      color:var(--green-dark);
+      margin-bottom:18px;
     }
 
-    .contact-stack {
-      display: grid;
-      gap: 14px;
-      margin-top: 18px;
+    .contact-list{
+      display:grid;
+      gap:14px;
+      margin-bottom:24px;
     }
 
-    .contact-item {
-      padding: 16px 18px;
-      border-radius: 18px;
-      background: rgba(247,242,235,0.94);
-      border: 1px solid rgba(30,24,19,0.06);
+    .contact-item{
+      background:rgba(255,255,255,0.90);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:15px 16px;
     }
 
-    .contact-item strong {
-      display: block;
-      margin-bottom: 4px;
-      font-size: 0.95rem;
+    .contact-item strong{
+      display:block;
+      color:#304124;
+      margin-bottom:4px;
     }
 
     .contact-item span,
-    .contact-item a {
-      color: var(--muted);
-      font-size: 1rem;
+    .contact-item a{
+      color:var(--muted);
+      font-weight:600;
     }
 
-    .map-wrap {
-      border-radius: 28px;
-      overflow: hidden;
-      min-height: 100%;
-      box-shadow: var(--shadow);
-      border: 1px solid rgba(30,24,19,0.08);
-      background: #e9dfd0;
+    .map-card{
+      overflow:hidden;
+      min-height:100%;
     }
 
-    .map-wrap iframe {
-      width: 100%;
-      height: 100%;
-      min-height: 540px;
-      border: 0;
-      display: block;
+    .map-card iframe{
+      width:100%;
+      height:100%;
+      min-height:620px;
+      border:0;
+      display:block;
     }
 
-    .faq-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
+    .footer{
+      margin-top:30px;
+      background:#17300f;
+      color:rgba(255,255,255,0.84);
+      padding:34px 0;
     }
 
-    .faq-item {
-      border-radius: 22px;
-      padding: 24px;
+    .footer-inner{
+      display:flex;
+      justify-content:space-between;
+      gap:18px;
+      flex-wrap:wrap;
+      align-items:center;
     }
 
-    .faq-item h3 {
-      font-size: 1.08rem;
-      margin-bottom: 8px;
+    .sticky-mobile{
+      position:fixed;
+      left:12px;
+      right:12px;
+      bottom:12px;
+      z-index:1200;
+      display:none;
+      gap:10px;
     }
 
-    .faq-item p {
-      margin: 0;
-      color: var(--muted);
+    .sticky-mobile a{
+      flex:1;
+      text-align:center;
     }
 
-    .cta {
-      padding: 18px 0 82px;
+    @media (max-width: 1200px){
+      .brand-text{
+        display:none;
+      }
+
+      .brand-logo{
+        width:78px;
+        height:78px;
+      }
+
+      .nav{
+        gap:14px;
+      }
+
+      .nav a{
+        font-size:0.95rem;
+      }
+
+      .nav-thai{
+        font-size:0.68rem;
+      }
+
+      .header-actions .btn{
+        padding:12px 18px;
+        font-size:0.92rem;
+      }
     }
 
-    .cta-box {
-      border-radius: 34px;
-      padding: 40px;
-      background:
-        radial-gradient(circle at top right, rgba(255,255,255,0.12), transparent 24%),
-        linear-gradient(135deg, #2f2216, #4b3522);
-      color: #fff;
-      box-shadow: var(--shadow-strong);
-    }
-
-    .cta-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .cta-box p {
-      color: rgba(255,255,255,0.84);
-      max-width: 760px;
-      margin: 12px 0 0;
-    }
-
-    footer {
-      border-top: 1px solid rgba(30,24,19,0.08);
-      padding: 28px 0 110px;
-      color: #675c50;
-      font-size: 0.95rem;
-    }
-
-    .footer-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-    }
-
-    .footer-links a:hover {
-      color: var(--gold-dark);
-    }
-
-    .floating-cta {
-      position: fixed;
-      left: 50%;
-      bottom: 18px;
-      transform: translateX(-50%);
-      width: min(calc(100% - 20px), 860px);
-      z-index: 1200;
-      pointer-events: none;
-    }
-
-    .floating-cta-inner {
-      pointer-events: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 14px 16px;
-      border-radius: 22px;
-      background: rgba(33, 23, 14, 0.92);
-      color: #fff;
-      backdrop-filter: blur(14px);
-      border: 1px solid rgba(255,255,255,0.08);
-      box-shadow: 0 18px 38px rgba(18, 12, 8, 0.28);
-    }
-
-    .floating-cta-text strong {
-      display: block;
-      font-size: 0.98rem;
-    }
-
-    .floating-cta-text span {
-      color: rgba(255,255,255,0.76);
-      font-size: 0.9rem;
-    }
-
-    .floating-cta-actions {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    .floating-cta .btn {
-      padding: 12px 18px;
-    }
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(18px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    @media (max-width: 1120px) {
+    @media (max-width: 1120px){
       .hero-grid,
-      .split-grid,
-      .price-overview,
-      .gallery-grid,
-      .contact-grid {
-        grid-template-columns: 1fr;
+      .about-grid,
+      .gift-grid,
+      .contact-grid{
+        grid-template-columns:1fr;
       }
 
-      .info-grid,
+      .reviews-grid{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .studio-grid{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .studio-tall{
+        grid-row:auto;
+        min-height:360px;
+      }
+
+      .hero-image img{
+        height:560px;
+      }
+
+      .hero-card{
+        position:static;
+        width:100%;
+        margin-top:16px;
+      }
+
+      .map-card iframe{
+        min-height:420px;
+      }
+    }
+
+    @media (max-width: 920px){
+      .header-inner{
+        min-height:auto;
+        padding:16px 0;
+        align-items:flex-start;
+        flex-direction:column;
+      }
+
+      .nav{
+        gap:16px;
+        flex-wrap:wrap;
+        white-space:normal;
+        justify-content:flex-start;
+      }
+
+      .header-actions{
+        width:100%;
+        flex-wrap:wrap;
+      }
+
+      .hero-facts,
+      .about-points,
+      .about-highlight,
       .services-grid,
-      .faq-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+      .studio-grid,
+      .reviews-grid{
+        grid-template-columns:1fr;
       }
 
-      .gallery-card.tall {
-        min-height: 360px;
-      }
-    }
-
-    @media (max-width: 860px) {
-      .nav-links,
-      .nav-cta .btn {
-        display: none;
+      .topbar-inner{
+        justify-content:center;
       }
 
-      .mobile-toggle {
-        display: inline-flex;
-      }
-
-      .mobile-menu {
-        display: block;
-        position: fixed;
-        inset: 0 0 0 auto;
-        width: min(88vw, 360px);
-        background: linear-gradient(180deg, #fbf8f4, #f4ede3);
-        z-index: 1300;
-        transform: translateX(100%);
-        transition: transform 0.28s ease;
-        box-shadow: -20px 0 40px rgba(20, 14, 9, 0.16);
-        padding: 18px;
-      }
-
-      body.menu-open .mobile-menu {
-        transform: translateX(0);
-      }
-
-      .mobile-overlay {
-        display: block;
-        position: fixed;
-        inset: 0;
-        background: rgba(18, 12, 8, 0.32);
-        z-index: 1250;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.25s ease;
-      }
-
-      body.menu-open .mobile-overlay {
-        opacity: 1;
-        pointer-events: auto;
-      }
-
-      .mobile-menu-head {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 14px;
-        padding-bottom: 16px;
-        border-bottom: 1px solid rgba(30,24,19,0.08);
-        margin-bottom: 16px;
-      }
-
-      .mobile-close {
-        width: 44px;
-        height: 44px;
-        border-radius: 12px;
-        border: 1px solid rgba(30,24,19,0.08);
-        background: rgba(255,255,255,0.8);
-        cursor: pointer;
-      }
-
-      .mobile-nav {
-        display: grid;
-        gap: 8px;
-      }
-
-      .mobile-nav a {
-        padding: 14px 14px;
-        border-radius: 14px;
-        background: rgba(255,255,255,0.7);
-        border: 1px solid rgba(30,24,19,0.06);
-        color: #473c32;
-        font-weight: 600;
-      }
-
-      .mobile-actions {
-        display: grid;
-        gap: 10px;
-        margin-top: 18px;
+      .brand-text{
+        display:flex;
       }
     }
 
-    @media (max-width: 760px) {
-      :root {
-        --header-h: 76px;
+    @media (max-width: 640px){
+      .container{
+        width:min(100% - 20px, var(--container));
       }
 
-      .hero {
-        padding-top: 34px;
+      .header{
+        position:relative;
       }
 
-      .hero-card {
-        padding: 30px 22px;
-        border-radius: 28px;
+      .brand-logo{
+        width:74px;
+        height:74px;
       }
 
-      .section-card,
-      .info-card,
+      .hero{
+        padding-top:34px;
+      }
+
+      .hero-copy,
+      .about-copy,
       .service-card,
-      .contact-card,
-      .gallery-card,
-      .faq-item,
-      .cta-box,
-      .highlight-card,
-      .price-card {
-        border-radius: 22px;
+      .gift-copy,
+      .review-card,
+      .contact-card{
+        padding:24px 20px;
       }
 
-      .hero-points,
-      .info-grid,
-      .services-grid,
-      .faq-grid,
-      .two-col-list {
-        grid-template-columns: 1fr;
+      .hero h1{
+        font-size:2.25rem;
       }
 
-      .section-head {
-        flex-direction: column;
-        align-items: flex-start;
+      .hero-image{
+        border-radius:24px;
       }
 
-      .hero-actions,
-      .floating-cta-actions {
-        flex-direction: column;
-        align-items: stretch;
+      .hero-image img{
+        height:420px;
       }
 
-      .btn {
-        width: 100%;
+      .section{
+        padding:66px 0;
       }
 
-      .floating-cta {
-        width: calc(100% - 14px);
-        bottom: 8px;
+      .map-card iframe{
+        min-height:340px;
       }
 
-      .floating-cta-inner {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 14px;
+      .sticky-mobile{
+        display:flex;
       }
 
-      .map-wrap iframe {
-        min-height: 420px;
+      .footer{
+        padding-bottom:94px;
       }
 
-      footer {
-        padding-bottom: 150px;
+      body::before{
+        background-size:520px auto;
+        opacity:0.62;
       }
     }
   </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MassageTherapist",
-    "name": "Reh´s Thaimassage",
-    "url": "https://www.rehs-thaimassage.de/",
-    "telephone": "+49 2234 2004237",
-    "founder": "Chorphaka Riedel",
-    "priceRange": "€€",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Bahnstraße 100",
-      "postalCode": "50858",
-      "addressLocality": "Köln",
-      "addressRegion": "Nordrhein-Westfalen",
-      "addressCountry": "DE"
-    },
-    "openingHours": [
-      "Tu 10:00-20:00",
-      "We 10:00-20:00",
-      "Th 10:00-20:00",
-      "Fr 10:00-20:00",
-      "Sa 10:00-20:00",
-      "Su 11:00-19:00"
-    ],
-    "hasMap": "https://maps.google.com/?q=Reh%C2%B4s+Thai-Massage+Bahnstra%C3%9Fe+100+50858+K%C3%B6ln",
-    "areaServed": "Köln-Weiden",
-    "sameAs": [
-      "https://www.rehs-thaimassage.de/"
-    ]
-  }
-  </script>
 </head>
 <body>
+
   <div class="topbar">
     <div class="container topbar-inner">
-      <span>Traditionelle Thai-Massage in Köln-Weiden</span>
-      <span>•</span>
-      <span>Telefonische Terminvereinbarung</span>
-      <span>•</span>
-      <span>Di–Sa 10:00–20:00 Uhr · So 11:00–19:00 Uhr</span>
+      <span>Traditionelle Thai Massage in Weiden</span>
+      <span>Weiden in der Oberpfalz · Termin nach Vereinbarung</span>
     </div>
   </div>
 
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#top" aria-label="Reh´s Thaimassage Startseite">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span>
-          <span class="brand-title">Reh´s Thaimassage</span>
-          <span class="brand-subtitle">Traditionelle Thai-Massage in Köln-Weiden</span>
-        </span>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <img class="brand-logo" src="images/logorehs.png" alt="Reh’s Thaimassage Logo" />
+        <div class="brand-text">
+          <div class="brand-title">Reh’s Thaimassage</div>
+          <div class="brand-sub">Entspannung · Regeneration · Wohlbefinden</div>
+        </div>
       </a>
 
-      <nav class="nav-links" aria-label="Hauptnavigation">
-        <a href="#ueber-uns">Über uns</a>
-        <a href="#massagen">Massagen</a>
-        <a href="#preise">Preise</a>
-        <a href="#galerie">Studio</a>
-        <a href="#gutscheine">Gutscheine</a>
-        <a href="#kontakt">Kontakt</a>
+      <nav class="nav">
+        <a href="#ueber-uns">Über uns<span class="nav-thai">เกี่ยวกับเรา</span></a>
+        <a href="#leistungen">Leistungen<span class="nav-thai">บริการ</span></a>
+        <a href="#studio">Studio<span class="nav-thai">สตูดิโอ</span></a>
+        <a href="#gutscheine">Gutscheine<span class="nav-thai">บัตรกำนัล</span></a>
+        <a href="#bewertungen">Rezensionen<span class="nav-thai">รีวิว</span></a>
+        <a href="#kontakt">Kontakt<span class="nav-thai">ติดต่อ</span></a>
       </nav>
 
-      <div class="nav-cta">
-        <a class="btn btn-primary" href="tel:+4922342004237">Jetzt anrufen</a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu">
-          <span></span>
-        </button>
+      <div class="header-actions">
+        <a class="btn btn-secondary" href="tel:+499611234567">Anrufen</a>
+        <a class="btn btn-primary" href="https://wa.me/499611234567" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       </div>
     </div>
   </header>
 
-  <div class="mobile-overlay" id="mobileOverlay"></div>
-
-  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
-    <div class="mobile-menu-head">
-      <div>
-        <div class="brand-title" style="font-size:1.6rem;">Reh´s Thaimassage</div>
-        <div class="brand-subtitle">Köln-Weiden</div>
-      </div>
-      <button class="mobile-close" id="mobileClose" aria-label="Menü schließen">✕</button>
-    </div>
-
-    <nav class="mobile-nav" aria-label="Mobile Navigation">
-      <a href="#ueber-uns">Über uns</a>
-      <a href="#massagen">Massagen</a>
-      <a href="#preise">Preise</a>
-      <a href="#galerie">Studio</a>
-      <a href="#gutscheine">Gutscheine</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
-
-    <div class="mobile-actions">
-      <a class="btn btn-primary" href="tel:+4922342004237">02234 - 2004237</a>
-      <a class="btn btn-secondary" href="https://maps.google.com/?q=Reh%C2%B4s+Thai-Massage+Bahnstra%C3%9Fe+100+50858+K%C3%B6ln" target="_blank" rel="noopener noreferrer">Route öffnen</a>
-    </div>
-  </aside>
-
   <main id="top">
     <section class="hero">
       <div class="container hero-grid">
-        <div class="hero-card reveal">
-          <span class="eyebrow">Original Thai-Massage · Köln-Weiden</span>
-          <h1>Entspannung mit Stil, Ruhe und traditioneller Berührung.</h1>
-          <p class="hero-text">
-            Willkommen bei Reh´s Thaimassage. Diese Premium-Onepage verbindet eine elegante Optik mit klarer
-            Nutzerführung: hochwertige Darstellung, schnelle Kontaktmöglichkeiten und ein seriöser, ruhiger
-            Markenauftritt im Stil einer modernen Wellness-Website.
+        <div class="hero-copy">
+          <span class="eyebrow">Relax & Rejuvenate</span>
+          <h1>Traditionelle Thai Massage in stilvoller und ruhiger Atmosphäre</h1>
+          <p>
+            Reh’s Thaimassage in Weiden steht für authentische Anwendungen,
+            eine ruhige Studioatmosphäre und einen hochwertigen Auftritt. Die Seite ist
+            darauf ausgelegt, Vertrauen aufzubauen und direkte Anfragen per WhatsApp
+            oder Telefon zu fördern.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="tel:+4922342004237">Termin telefonisch vereinbaren</a>
-            <a class="btn btn-secondary" href="#preise">Preise ansehen</a>
+            <a class="btn btn-primary" href="https://wa.me/499611234567?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20bei%20Reh%E2%80%99s%20Thaimassage%20anfragen." target="_blank" rel="noopener noreferrer">Termin per WhatsApp</a>
+            <a class="btn btn-secondary" href="tel:+499611234567">Jetzt anrufen</a>
           </div>
 
-          <div class="hero-points">
-            <div class="hero-point">
-              <strong>Traditionell & authentisch</strong>
-              <span>Thai-Massage, Fußmassage sowie Kopf- & Schultermassage.</span>
+          <div class="hero-facts">
+            <div class="hero-fact">
+              <strong>Authentisch</strong>
+              <span>Traditionelle Anwendungen mit Wellness-Fokus.</span>
             </div>
-            <div class="hero-point">
-              <strong>Zentral in Köln-Weiden</strong>
-              <span>Bahnstraße 100, bequem erreichbar mit der KVB Linie 1.</span>
+            <div class="hero-fact">
+              <strong>Stilvoll</strong>
+              <span>Gepflegte Räume und hochwertige Präsentation.</span>
             </div>
-            <div class="hero-point">
-              <strong>Direkte Terminvergabe</strong>
-              <span>Kontakt und Buchungswunsch schnell per Telefon.</span>
+            <div class="hero-fact">
+              <strong>Direkt buchbar</strong>
+              <span>Kontakt ohne Umwege per WhatsApp oder Telefon.</span>
             </div>
           </div>
         </div>
 
-        <div class="hero-visual reveal">
-          <div class="visual-content">
-            <span class="visual-label">Wellness · Ruhe · Balance</span>
-            <h2>Eine moderne Premium-Präsenz für ein traditionelles Studio.</h2>
+        <div class="hero-visual">
+          <div class="hero-image">
+            <img src="images/raum1.jpg" alt="Behandlungsraum von Reh’s Thaimassage" />
+          </div>
+          <div class="hero-card">
+            <h3>Ruhe, Qualität und Wohlbefinden</h3>
             <p>
-              Sauber aufgebaut, mobil stark optimiert und mit klarer Conversion-Struktur für Anrufe, Route
-              und Vertrauen.
+              Ein harmonischer erster Eindruck schafft Vertrauen und vermittelt direkt
+              die entspannte Atmosphäre des Studios.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="ueber-uns">
+    <section class="section" id="ueber-uns">
       <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-kicker">Über das Studio</span>
-            <h2 class="section-title">Traditionelle Thai-Massage in ruhiger Atmosphäre</h2>
-          </div>
-          <p class="section-desc">
-            Die traditionelle Thai-Massage wird auf der offiziellen Seite als „Nuad Phaen Boran“ beschrieben
-            und mit passiven Dehnungen, Gelenkmobilisation sowie Druckpunkttechniken verbunden. Diese Website
-            übersetzt genau dieses Profil in einen klaren, hochwertigen und vertrauensvollen Webauftritt.
+        <div class="section-head">
+          <span class="kicker">
+            Über uns
+            <span class="kicker-thai">เกี่ยวกับเรา</span>
+          </span>
+          <h2>Persönlich, hochwertig und auf Entspannung ausgerichtet</h2>
+          <p>
+            Reh’s Thaimassage verbindet traditionelle Massagekultur mit
+            einem modernen, harmonischen Studio. Die persönliche Note und das
+            hochwertige Ambiente schaffen Vertrauen vom ersten Eindruck an.
           </p>
         </div>
 
-        <div class="info-grid">
-          <article class="info-card reveal">
-            <div class="info-icon">01</div>
-            <h3>Authentische Ausrichtung</h3>
-            <p>Traditionelle Techniken mit Fokus auf Entspannung, Lockerung und ein angenehmes Körpergefühl.</p>
-          </article>
+        <div class="about-grid">
+          <div class="card about-image">
+            <img src="images/inhaberin.jpg" alt="Inhaberin von Reh’s Thaimassage" />
+          </div>
 
-          <article class="info-card reveal">
-            <div class="info-icon">02</div>
-            <h3>Persönlicher Kontakt</h3>
-            <p>Bewusst direkte Terminvereinbarung per Telefon statt komplizierter Buchungsstrecken.</p>
-          </article>
+          <div class="card about-copy">
+            <span class="about-mini-kicker">Tradition & Herzlichkeit</span>
 
-          <article class="info-card reveal">
-            <div class="info-icon">03</div>
-            <h3>Lokale Klarheit</h3>
-            <p>Adresse, Öffnungszeiten und ÖPNV-Anbindung sind prominent eingebunden und sofort sichtbar.</p>
-          </article>
+            <h3>Traditionelle Thai-Massage mit persönlicher Atmosphäre</h3>
 
-          <article class="info-card reveal">
-            <div class="info-icon">04</div>
-            <h3>Seriöse Premium-Optik</h3>
-            <p>Visuell nah an einer hochwertigen Massage- und Wellnessmarke mit klarer mobiler Struktur.</p>
-          </article>
+            <p>
+              Bei Reh’s Thaimassage stehen Ruhe, Achtsamkeit und eine
+              persönliche Betreuung im Mittelpunkt. Die traditionelle Thai-Massage
+              verbindet bewährte Techniken mit einem harmonischen Ambiente, in dem
+              man vom ersten Moment an abschalten kann.
+            </p>
+
+            <p>
+              Die Verbindung aus authentischer Anwendung, freundlicher Betreuung und
+              stilvoller Umgebung schafft einen Ort, an dem Entspannung, Regeneration
+              und Wohlbefinden spürbar werden.
+            </p>
+
+            <div class="about-highlight">
+              <div class="about-highlight-item">
+                <strong>Traditionell</strong>
+                <span>Inspiriert von klassischer thailändischer Massagekultur.</span>
+              </div>
+              <div class="about-highlight-item">
+                <strong>Persönlich</strong>
+                <span>Individuelle, vertrauensvolle und ruhige Atmosphäre.</span>
+              </div>
+            </div>
+
+            <div class="about-points">
+              <div class="about-point">Traditionelle Thai-Massage</div>
+              <div class="about-point">Aromaöl & Wellness</div>
+              <div class="about-point">Hot Stone Anwendungen</div>
+              <div class="about-point">Kräuterstempel-Massage</div>
+            </div>
+
+            <div class="about-note">
+              Ein kleiner Ort zum Abschalten – mit traditionellem Charakter,
+              persönlicher Note und einem hochwertigen Wellnessgefühl.
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="massagen">
+    <section class="section" id="leistungen">
       <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-kicker">Massagen</span>
-            <h2 class="section-title">Behandlungen mit klarer Preisstruktur</h2>
-          </div>
-          <p class="section-desc">
-            Die offiziellen Leistungen sind bewusst kompakt. Deshalb ist die Seite auf Übersicht, Eleganz und
-            schnelle Entscheidung aufgebaut.
+        <div class="section-head">
+          <span class="kicker">
+            Leistungen
+            <span class="kicker-thai">บริการ</span>
+          </span>
+          <h2>Strukturiert dargestellt und direkt anfragbar</h2>
+          <p>
+            Alle Leistungen sind klar gegliedert und direkt mit WhatsApp oder Telefon
+            verknüpft, damit Besucher sofort handeln können.
           </p>
         </div>
 
         <div class="services-grid">
-          <article class="service-card reveal">
+          <article class="card service-card">
             <div class="service-top">
-              <span class="service-badge">Klassisch</span>
+              <h3>Thaimassage / mit oder ohne Massageöl</h3>
+              <span class="badge">Klassiker</span>
             </div>
-            <h3>Traditionelle Thai-Massage</h3>
-            <p>
-              Die Kernbehandlung des Studios. Laut offizieller Seite auf Wunsch auch mit Öl.
-            </p>
-            <div class="price-list">
-              <div class="price-row"><span>30 Minuten</span><strong>32,- €</strong></div>
-              <div class="price-row"><span>60 Minuten</span><strong>50,- €</strong></div>
-              <div class="price-row"><span>90 Minuten</span><strong>82,- €</strong></div>
-              <div class="price-row"><span>120 Minuten</span><strong>95,- €</strong></div>
+            <p>Klassische Thai-Massage mit entspannender und aktivierender Wirkung.</p>
+            <div class="service-prices">
+              <div><span>30 Minuten</span><span>29 €</span></div>
+              <div><span>60 Minuten</span><span>45 €</span></div>
+              <div><span>90 Minuten</span><span>65 €</span></div>
+              <div><span>120 Minuten</span><span>85 €</span></div>
+            </div>
+            <div class="service-actions">
+              <a class="btn btn-primary" href="https://wa.me/499611234567?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20f%C3%BCr%20die%20Thaimassage%20anfragen." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              <a class="btn btn-secondary" href="tel:+499611234567">Telefon</a>
             </div>
           </article>
 
-          <article class="service-card reveal">
+          <article class="card service-card">
             <div class="service-top">
-              <span class="service-badge">Gezielt</span>
+              <h3>Wellness-Aromaöl-Massage</h3>
+              <span class="badge">Wellness</span>
             </div>
-            <h3>Fußmassage</h3>
-            <p>
-              Eine wohltuende Anwendung für Füße und Unterschenkel, ideal als entspannende Ergänzung oder kurze Auszeit.
-            </p>
-            <div class="price-list">
-              <div class="price-row"><span>30 Minuten</span><strong>32,- €</strong></div>
-              <div class="price-row"><span>60 Minuten</span><strong>50,- €</strong></div>
+            <p>Sanfte Anwendung mit Öl für ein ruhiges, fließendes Entspannungserlebnis.</p>
+            <div class="service-prices">
+              <div><span>60 Minuten</span><span>53 €</span></div>
+              <div><span>90 Minuten</span><span>73 €</span></div>
+              <div><span>120 Minuten</span><span>93 €</span></div>
+            </div>
+            <div class="service-actions">
+              <a class="btn btn-primary" href="https://wa.me/499611234567?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20f%C3%BCr%20die%20Wellness-Aroma%C3%B6l-Massage%20anfragen." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              <a class="btn btn-secondary" href="tel:+499611234567">Telefon</a>
             </div>
           </article>
 
-          <article class="service-card reveal">
+          <article class="card service-card">
             <div class="service-top">
-              <span class="service-badge">Fokusbereich</span>
+              <h3>Entspannende Kräuterstempel-Massage</h3>
+              <span class="badge">Premium</span>
             </div>
-            <h3>Kopf- &amp; Schultermassage</h3>
-            <p>
-              Angenehme Behandlung für Schulter-, Nacken- und Kopfbereich mit klarem Wohlfühlfaktor.
-            </p>
-            <div class="price-list">
-              <div class="price-row"><span>30 Minuten</span><strong>32,- €</strong></div>
-              <div class="price-row"><span>60 Minuten</span><strong>50,- €</strong></div>
+            <p>Wärmende Kräuterstempel-Anwendung für ein luxuriöses Wellness-Erlebnis.</p>
+            <div class="service-prices">
+              <div><span>60 Minuten</span><span>59 €</span></div>
+              <div><span>90 Minuten</span><span>85 €</span></div>
+              <div><span>120 Minuten</span><span>109 €</span></div>
+            </div>
+            <div class="service-actions">
+              <a class="btn btn-primary" href="https://wa.me/499611234567?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20f%C3%BCr%20die%20Kr%C3%A4uterstempel-Massage%20anfragen." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              <a class="btn btn-secondary" href="tel:+499611234567">Telefon</a>
+            </div>
+          </article>
+
+          <article class="card service-card">
+            <div class="service-top">
+              <h3>Wärmende Hotstone-Massage</h3>
+              <span class="badge">Beliebt</span>
+            </div>
+            <p>Tiefenentspannung durch Wärme und eine ruhige, hochwertige Anwendung.</p>
+            <div class="service-prices">
+              <div><span>60 Minuten</span><span>59 €</span></div>
+              <div><span>90 Minuten</span><span>85 €</span></div>
+              <div><span>120 Minuten</span><span>109 €</span></div>
+            </div>
+            <div class="service-actions">
+              <a class="btn btn-primary" href="https://wa.me/499611234567?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20f%C3%BCr%20die%20Hotstone-Massage%20anfragen." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              <a class="btn btn-secondary" href="tel:+499611234567">Telefon</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container split-grid">
-        <div class="section-card reveal">
-          <span class="section-kicker">Wirkung & Wohlbefinden</span>
-          <h2 class="section-title" style="margin-bottom:14px;">Was Thai-Massage unterstützen kann</h2>
-          <p class="section-desc" style="max-width:none;">
-            Auf der offiziellen Website werden unter anderem Kopfschmerzen, Schlafstörungen, Schwindel,
-            Rückenschmerzen oder Knieschmerzen im Zusammenhang mit der traditionellen Lehre der Thai-Massage genannt.
-            Für eine moderne Website ist es sinnvoll, diese Aussagen zurückhaltend und stilvoll als Wellness-Kontext
-            einzuordnen.
+    <section class="section" id="studio">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">
+            Studio
+            <span class="kicker-thai">สตูดิโอ</span>
+          </span>
+          <h2>Sauber geordnete Studioeinblicke</h2>
+          <p>
+            Ein harmonischer Einblick in Räume, Anwendungen und Atmosphäre.
           </p>
-
-          <div class="two-col-list">
-            <div>Tiefe Entspannung</div>
-            <div>Lockerung verspannter Bereiche</div>
-            <div>Bewusste Entschleunigung</div>
-            <div>Wohltuende Auszeit im Alltag</div>
-            <div>Traditionelle Berührungskultur</div>
-            <div>Ganzheitliches Körpergefühl</div>
-          </div>
         </div>
 
-        <div class="highlight-card reveal">
-          <div>
-            <blockquote>„Uralte heilsame Berührung“ – traditionell gedacht, stilvoll digital präsentiert.</blockquote>
+        <div class="studio-grid">
+          <div class="card studio-card studio-tall">
+            <img src="images/raum1.jpg" alt="Großer Behandlungsraum von Reh’s Thaimassage" />
+            <div class="studio-label">Behandlungsraum 1</div>
+          </div>
+
+          <div class="card studio-card">
+            <img src="images/raum2.jpg" alt="Zweiter Behandlungsraum von Reh’s Thaimassage" />
+            <div class="studio-label">Behandlungsraum 2</div>
+          </div>
+
+          <div class="card studio-card">
+            <img src="images/kraeuterstempel.jpg" alt="Kräuterstempel bei Reh’s Thaimassage" />
+            <div class="studio-label">Kräuterstempel</div>
+          </div>
+
+          <div class="card studio-card">
+            <img src="images/gutschein.jpg" alt="Gutscheine von Reh’s Thaimassage" />
+            <div class="studio-label">Gutscheine</div>
+          </div>
+
+          <div class="card studio-card">
+            <img src="images/inhaberin.jpg" alt="Inhaberin von Reh’s Thaimassage" />
+            <div class="studio-label">Persönlicher Eindruck</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gutscheine">
+      <div class="container">
+        <div class="gift-grid">
+          <div class="card gift-image">
+            <img src="images/gutschein.jpg" alt="Gutscheine von Reh’s Thaimassage" />
+          </div>
+
+          <div class="card gift-copy">
+            <span class="gift-kicker">
+              <span class="gift-kicker-top">✦ Gutscheine ✦</span>
+              <span class="kicker-thai">บัตรกำนัล</span>
+            </span>
+            <h3>Entspannung stilvoll verschenken</h3>
             <p>
-              Die Premium-Version setzt stärker auf Markenwirkung: ruhige Typografie, hochwertige Sektionen,
-              bessere mobile Navigation und eine klarere Struktur für lokale Sichtbarkeit.
+              Gutscheine sind eine hochwertige Geschenkidee für Geburtstage, Feiertage
+              oder besondere Anlässe.
             </p>
-          </div>
-          <div style="margin-top:24px;">
-            <a class="btn btn-primary" href="tel:+4922342004237">Jetzt anrufen</a>
+            <p>
+              Die Anfrage erfolgt direkt per WhatsApp oder telefonisch.
+            </p>
+
+            <div class="hero-actions" style="margin-top:20px;">
+              <a class="btn btn-primary" href="https://wa.me/499611234567?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Gutschein%20anfragen." target="_blank" rel="noopener noreferrer">Gutschein per WhatsApp</a>
+              <a class="btn btn-secondary" href="tel:+499611234567">Telefonisch anfragen</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="preise">
+    <section class="section" id="bewertungen">
       <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-kicker">Preise</span>
-            <h2 class="section-title">Preisübersicht auf einen Blick</h2>
-          </div>
-          <p class="section-desc">
-            Klar aufgebaut, damit Nutzer sofort sehen, welche Behandlungen und Dauern angeboten werden.
+        <div class="section-head">
+          <span class="kicker">
+            Rezensionen
+            <span class="kicker-thai">รีวิว</span>
+          </span>
+          <h2>Erfahrungen, die Vertrauen schaffen</h2>
+          <p>
+            Bewertungen direkt vor dem Kontaktbereich stärken Vertrauen und unterstützen
+            die Entscheidung zur Terminvereinbarung.
           </p>
         </div>
 
-        <div class="price-overview">
-          <div class="price-card reveal">
-            <table class="price-table" aria-label="Preisübersicht Reh´s Thaimassage">
-              <thead>
-                <tr>
-                  <th>Leistung</th>
-                  <th>Dauer</th>
-                  <th>Preis</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Traditionelle Thai-Massage</td>
-                  <td>30 Min.</td>
-                  <td>32,- €</td>
-                </tr>
-                <tr>
-                  <td>Traditionelle Thai-Massage</td>
-                  <td>60 Min.</td>
-                  <td>50,- €</td>
-                </tr>
-                <tr>
-                  <td>Traditionelle Thai-Massage</td>
-                  <td>90 Min.</td>
-                  <td>82,- €</td>
-                </tr>
-                <tr>
-                  <td>Traditionelle Thai-Massage</td>
-                  <td>120 Min.</td>
-                  <td>95,- €</td>
-                </tr>
-                <tr>
-                  <td>Fußmassage</td>
-                  <td>30 Min.</td>
-                  <td>32,- €</td>
-                </tr>
-                <tr>
-                  <td>Fußmassage</td>
-                  <td>60 Min.</td>
-                  <td>50,- €</td>
-                </tr>
-                <tr>
-                  <td>Kopf- &amp; Schultermassage</td>
-                  <td>30 Min.</td>
-                  <td>32,- €</td>
-                </tr>
-                <tr>
-                  <td>Kopf- &amp; Schultermassage</td>
-                  <td>60 Min.</td>
-                  <td>50,- €</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <aside class="price-card reveal">
-            <div class="callout">
-              <h3>Telefonische Terminvereinbarung</h3>
-              <p>Die offizielle Seite bittet ausdrücklich um telefonische Terminvereinbarung.</p>
+        <div class="reviews-grid">
+          <article class="card review-card">
+            <div class="review-head">
+              <div class="review-user">
+                <div class="review-avatar">RG</div>
+                <div class="review-meta">
+                  <div class="review-name">Gast</div>
+                  <div class="review-source">Öffentlich sichtbare Bewertung</div>
+                </div>
+              </div>
+              <div class="google-badge">G</div>
             </div>
 
-            <div class="callout">
-              <h3>Ideal für Geschenkideen</h3>
-              <p>Alle Massagen sind auch als Geschenkgutschein erhältlich.</p>
+            <div class="review-stars">★★★★★</div>
+
+            <p class="review-text">
+              „Sehr angenehme und ruhige Atmosphäre. Die Massage war professionell,
+              entspannend und genau das Richtige, um vom Alltag abzuschalten.“
+            </p>
+
+            <div class="review-note">
+              Diese Karte kann später durch echte Rezensionen ersetzt werden.
+            </div>
+          </article>
+
+          <article class="card review-card">
+            <div class="review-head">
+              <div class="review-user">
+                <div class="review-avatar">AK</div>
+                <div class="review-meta">
+                  <div class="review-name">Kundenstimme 2</div>
+                  <div class="review-source">Bewertung einfügen</div>
+                </div>
+              </div>
+              <div class="google-badge">G</div>
             </div>
 
-            <div class="callout">
-              <h3>Starke lokale Nutzerführung</h3>
-              <p>Die Premium-Seite legt Telefon, Route und Öffnungszeiten an besonders prominente Stellen.</p>
+            <div class="review-stars">★★★★★</div>
+
+            <p class="review-text">
+              „Freundlicher Empfang, schöne Räume und eine sehr wohltuende Behandlung.
+              Man merkt sofort die persönliche und entspannte Atmosphäre.“
+            </p>
+
+            <div class="review-note">
+              Name, Initialen und Text können jederzeit durch echte Bewertungen ersetzt werden.
             </div>
-          </aside>
+          </article>
+
+          <article class="card review-card">
+            <div class="review-head">
+              <div class="review-user">
+                <div class="review-avatar">MS</div>
+                <div class="review-meta">
+                  <div class="review-name">Kundenstimme 3</div>
+                  <div class="review-source">Bewertung einfügen</div>
+                </div>
+              </div>
+              <div class="google-badge">G</div>
+            </div>
+
+            <div class="review-stars">★★★★★</div>
+
+            <p class="review-text">
+              „Sehr sauber, ruhig und professionell. Eine schöne Möglichkeit, Körper und
+              Geist wieder in Balance zu bringen. Klare Empfehlung.“
+            </p>
+
+            <div class="review-note">
+              Die Rezensionen-Sektion ist bereits im finalen Design aufgebaut.
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="galerie">
+    <section class="section" id="kontakt">
       <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-kicker">Studio</span>
-            <h2 class="section-title">Premium-Galerie-Struktur für eigene Bilder</h2>
-          </div>
-          <p class="section-desc">
-            Diese Sektion ist absichtlich professionell vorbereitet. Du kannst hier später echte Studiofotos
-            oder Raumaufnahmen einsetzen, ohne das Layout neu bauen zu müssen.
-          </p>
-        </div>
-
-        <div class="gallery-grid">
-          <div class="gallery-main">
-            <div class="gallery-card tall reveal">
-              <div class="gallery-label">
-                <strong>Hero- oder Studiobild</strong>
-                <span>Hier später ein hochwertiges Hauptbild vom Behandlungsraum oder Eingangsbereich einsetzen.</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-side">
-            <div class="gallery-card reveal">
-              <div class="gallery-label">
-                <strong>Atmosphäre</strong>
-                <span>Ideal für Details wie Deko, Raumstimmung, Liege oder traditionelles Ambiente.</span>
-              </div>
-            </div>
-
-            <div class="gallery-card reveal">
-              <div class="gallery-label">
-                <strong>Behandlungsraum</strong>
-                <span>Optional mit echtem Studiofoto für deutlich mehr Vertrauen und Premium-Wirkung.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="gutscheine">
-      <div class="container split-grid">
-        <div class="section-card reveal">
-          <span class="section-kicker">Gutscheine</span>
-          <h2 class="section-title" style="margin-bottom:14px;">Wellness stilvoll verschenken</h2>
-          <p class="section-desc" style="max-width:none;">
-            Laut offizieller Seite sind alle Massagen auch als Geschenkgutschein erhältlich und während der
-            Öffnungszeiten im Geschäft verfügbar.
-          </p>
-
-          <div class="two-col-list">
-            <div>Für Geburtstage</div>
-            <div>Für Feiertage</div>
-            <div>Für besondere Anlässe</div>
-            <div>Direkt vor Ort erhältlich</div>
-          </div>
-
-          <div style="margin-top:24px;">
-            <a class="btn btn-primary" href="tel:+4922342004237">Gutschein telefonisch anfragen</a>
-          </div>
-        </div>
-
-        <div class="section-card reveal">
-          <span class="section-kicker">Persönliche Daten</span>
-          <h2 class="section-title" style="margin-bottom:14px;">Kontakt, Inhaberin und Standort klar dargestellt</h2>
-          <p class="section-desc" style="max-width:none;">
-            Gerade bei lokalen Wellness-Angeboten sorgt eine klare, ruhige und glaubwürdige Darstellung von
-            Inhaberin, Adresse und Erreichbarkeit für deutlich mehr Vertrauen.
-          </p>
-
-          <div class="contact-stack">
-            <div class="contact-item">
-              <strong>Studio</strong>
-              <span>Reh´s Thai-Massage</span>
-            </div>
-            <div class="contact-item">
-              <strong>Inhaberin</strong>
-              <span>Chorphaka Riedel</span>
-            </div>
-            <div class="contact-item">
-              <strong>Standort</strong>
-              <span>Bahnstraße 100 · 50858 Köln-Weiden</span>
-            </div>
-            <div class="contact-item">
-              <strong>Telefon</strong>
-              <a href="tel:+4922342004237">02234 - 2004237</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="kontakt">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-kicker">Kontakt & Anfahrt</span>
-            <h2 class="section-title">Direkt erreichbar in Köln-Weiden</h2>
-          </div>
-          <p class="section-desc">
-            Adresse, Öffnungszeiten und Anfahrt sind gezielt conversion-stark eingebunden, damit Besucher
-            ohne Umwege Kontakt aufnehmen können.
+        <div class="section-head">
+          <span class="kicker">
+            Kontakt
+            <span class="kicker-thai">ติดต่อ</span>
+          </span>
+          <h2>Direkt anfragen und Standort ansehen</h2>
+          <p>
+            Wer buchen möchte, wird direkt zu WhatsApp oder zur Telefonnummer geleitet.
+            Zusätzlich ist der Standort direkt per eingebetteter Karte sichtbar.
           </p>
         </div>
 
         <div class="contact-grid">
-          <div class="contact-card reveal">
-            <span class="section-kicker">Alle Infos auf einen Blick</span>
-            <h2 class="section-title" style="margin-bottom:14px;">Termin, Öffnungszeiten und Route</h2>
-            <p class="section-desc" style="max-width:none;">
-              Gut sichtbar für Desktop und mobil. Besonders wichtig für lokale SEO und Nutzer, die direkt
-              vom Smartphone anrufen oder die Route öffnen möchten.
-            </p>
+          <div class="card contact-card">
+            <h3>Reh’s Thaimassage</h3>
 
-            <div class="contact-stack">
+            <div class="contact-list">
               <div class="contact-item">
                 <strong>Adresse</strong>
-                <span>Bahnstraße 100<br />50858 Köln-Weiden</span>
+                <span>Weiden in der Oberpfalz</span>
               </div>
               <div class="contact-item">
                 <strong>Telefon</strong>
-                <a href="tel:+4922342004237">02234 - 2004237</a>
+                <a href="tel:+499611234567">0961 1234567</a>
               </div>
               <div class="contact-item">
-                <strong>Öffnungszeiten</strong>
-                <span>Di.–Sa. 10:00 – 20:00 Uhr<br />Sonntag 11:00 – 19:00 Uhr</span>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/499611234567" target="_blank" rel="noopener noreferrer">Jetzt direkt öffnen</a>
               </div>
               <div class="contact-item">
-                <strong>ÖPNV</strong>
-                <span>KVB Linie 1 · Haltestelle „Bahnstraße“</span>
+                <strong>E-Mail</strong>
+                <a href="mailto:info@rehs-thaimassage.de">info@rehs-thaimassage.de</a>
               </div>
             </div>
 
-            <div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:14px;">
-              <a class="btn btn-primary" href="tel:+4922342004237">Jetzt anrufen</a>
-              <a
-                class="btn btn-secondary"
-                href="https://maps.google.com/?q=Reh%C2%B4s+Thai-Massage+Bahnstra%C3%9Fe+100+50858+K%C3%B6ln"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Route öffnen
-              </a>
+            <div class="header-actions">
+              <a class="btn btn-primary" href="https://wa.me/499611234567?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20anfragen." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              <a class="btn btn-secondary" href="tel:+499611234567">Anrufen</a>
             </div>
           </div>
 
-          <div class="map-wrap reveal">
+          <div class="card map-card">
             <iframe
-              title="Karte Reh´s Thaimassage Köln-Weiden"
+              src="https://www.google.com/maps?q=Weiden%20in%20der%20Oberpfalz&z=14&output=embed"
+              allowfullscreen=""
               loading="lazy"
-              allowfullscreen
               referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=Reh%C2%B4s%20Thai-Massage%2C%20Bahnstra%C3%9Fe%20100%2C%2050858%20K%C3%B6ln&z=16&output=embed">
+              title="Google Maps Standort Reh’s Thaimassage">
             </iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-kicker">FAQ</span>
-            <h2 class="section-title">Häufige Fragen kompakt beantwortet</h2>
-          </div>
-          <p class="section-desc">
-            Diese Sektion macht die Seite vollständiger, vertrauensvoller und suchmaschinenfreundlicher.
-          </p>
-        </div>
-
-        <div class="faq-grid">
-          <article class="faq-item reveal">
-            <h3>Wie vereinbare ich einen Termin?</h3>
-            <p>Am schnellsten telefonisch unter 02234 - 2004237.</p>
-          </article>
-
-          <article class="faq-item reveal">
-            <h3>Welche Behandlungen werden angeboten?</h3>
-            <p>Traditionelle Thai-Massage, Fußmassage sowie Kopf- und Schultermassage.</p>
-          </article>
-
-          <article class="faq-item reveal">
-            <h3>Gibt es Gutscheine?</h3>
-            <p>Ja, alle Massagen sind auch als Geschenkgutschein erhältlich.</p>
-          </article>
-
-          <article class="faq-item reveal">
-            <h3>Wie ist das Studio erreichbar?</h3>
-            <p>Mit der KVB Linie 1 bis zur Haltestelle „Bahnstraße“ oder per Route über Google Maps.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="container">
-        <div class="cta-box reveal">
-          <div class="cta-row">
-            <div>
-              <span class="section-kicker" style="color:rgba(255,255,255,0.72);">Terminvereinbarung</span>
-              <h2 class="section-title" style="color:#fff;">Jetzt Ihre Auszeit in Köln-Weiden planen</h2>
-              <p>
-                Die Seite ist bewusst darauf optimiert, dass Nutzer sofort handeln können: anrufen, Preise sehen,
-                Studio wahrnehmen und die Route direkt öffnen.
-              </p>
-            </div>
-            <a class="btn btn-primary" href="tel:+4922342004237">02234 - 2004237</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-row">
-      <div>© Reh´s Thaimassage · Bahnstraße 100 · 50858 Köln-Weiden</div>
-      <div class="footer-links">
-        <a href="https://www.rehs-thaimassage.de/" target="_blank" rel="noopener noreferrer">Offizielle Website</a>
-        <a href="https://www.rehs-thaimassage.de/index.php/impressum" target="_blank" rel="noopener noreferrer">Impressum</a>
-        <a href="https://www.rehs-thaimassage.de/index.php/datenschutzerklaerung" target="_blank" rel="noopener noreferrer">Datenschutz</a>
-        <a href="tel:+4922342004237">Telefon</a>
-      </div>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p><strong>Reh’s Thaimassage</strong> · Weiden in der Oberpfalz</p>
+      <p>Tel. 0961 1234567 · E-Mail: info@rehs-thaimassage.de</p>
     </div>
   </footer>
 
-  <div class="floating-cta" aria-hidden="false">
-    <div class="floating-cta-inner">
-      <div class="floating-cta-text">
-        <strong>Reh´s Thaimassage · Köln-Weiden</strong>
-        <span>Telefonische Terminvereinbarung · schnelle mobile Kontaktaufnahme</span>
-      </div>
-      <div class="floating-cta-actions">
-        <a class="btn btn-primary" href="tel:+4922342004237">Anrufen</a>
-        <a
-          class="btn btn-secondary"
-          href="https://maps.google.com/?q=Reh%C2%B4s+Thai-Massage+Bahnstra%C3%9Fe+100+50858+K%C3%B6ln"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Route
-        </a>
-      </div>
-    </div>
+  <div class="sticky-mobile">
+    <a class="btn btn-secondary" href="tel:+499611234567">Anrufen</a>
+    <a class="btn btn-primary" href="https://wa.me/499611234567" target="_blank" rel="noopener noreferrer">WhatsApp</a>
   </div>
 
-  <script>
-    const body = document.body;
-    const mobileToggle = document.getElementById("mobileToggle");
-    const mobileClose = document.getElementById("mobileClose");
-    const mobileMenu = document.getElementById("mobileMenu");
-    const mobileOverlay = document.getElementById("mobileOverlay");
-    const mobileLinks = mobileMenu.querySelectorAll("a");
-
-    function openMenu() {
-      body.classList.add("menu-open");
-      mobileMenu.setAttribute("aria-hidden", "false");
-      mobileToggle.setAttribute("aria-expanded", "true");
-    }
-
-    function closeMenu() {
-      body.classList.remove("menu-open");
-      mobileMenu.setAttribute("aria-hidden", "true");
-      mobileToggle.setAttribute("aria-expanded", "false");
-    }
-
-    mobileToggle.addEventListener("click", () => {
-      if (body.classList.contains("menu-open")) {
-        closeMenu();
-      } else {
-        openMenu();
-      }
-    });
-
-    mobileClose.addEventListener("click", closeMenu);
-    mobileOverlay.addEventListener("click", closeMenu);
-
-    mobileLinks.forEach(link => {
-      link.addEventListener("click", closeMenu);
-    });
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeMenu();
-    });
-
-    const reveals = document.querySelectorAll(".reveal");
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-
-    reveals.forEach(el => revealObserver.observe(el));
-  </script>
 </body>
 </html>
